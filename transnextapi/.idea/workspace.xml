@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f6d4cb7-5aa4-4ac0-bcdb-cb9fc5e14cdb" name="Default Changelist" comment="" />
+    <list default="true" id="1f6d4cb7-5aa4-4ac0-bcdb-cb9fc5e14cdb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transnextapi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transnextapi/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/settings/dev.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,6 +122,8 @@
       <option name="presentableId" value="Default" />
       <updated>1587179277482</updated>
       <workItem from="1587179280927" duration="8767000" />
+      <workItem from="1587260258082" duration="2076000" />
+      <workItem from="1587263047834" duration="2022000" />
     </task>
     <servers />
   </component>
@@ -136,28 +143,28 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1011" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587220310745" />
-    <state width="1240" height="260" key="GridCell.Tab.0.bottom" timestamp="1587221860895">
+    <state width="1241" height="322" key="GridCell.Tab.0.bottom" timestamp="1587265369652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1240" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587221860895" />
-    <state width="1240" height="260" key="GridCell.Tab.0.center" timestamp="1587221860894">
+    <state width="1241" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587265369652" />
+    <state width="1241" height="322" key="GridCell.Tab.0.center" timestamp="1587265369652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1240" height="260" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587221860894" />
-    <state width="1240" height="260" key="GridCell.Tab.0.left" timestamp="1587221860894">
+    <state width="1241" height="322" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587265369652" />
+    <state width="1241" height="322" key="GridCell.Tab.0.left" timestamp="1587265369652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1240" height="260" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587221860894" />
-    <state width="1240" height="260" key="GridCell.Tab.0.right" timestamp="1587221860894">
+    <state width="1241" height="322" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587265369652" />
+    <state width="1241" height="322" key="GridCell.Tab.0.right" timestamp="1587265369652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1240" height="260" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587221860894" />
+    <state width="1241" height="322" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587265369652" />
     <state x="462" y="162" key="SettingsEditor" timestamp="1587179422555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="462" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587179422555" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/transnextapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1587219746902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/transnextapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1587263813708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

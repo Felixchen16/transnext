@@ -19,3 +19,14 @@ INFO 2020-04-18 22:56:54,129 [autoreload] E:\pycode\transnext\transnextapi\trans
 INFO 2020-04-18 22:56:54,736 [autoreload] Watching for file changes with StatReloader
 INFO 2020-04-18 22:57:24,465 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
 INFO 2020-04-18 22:57:25,068 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-19 10:36:03,405 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-19 10:36:51,816 [autoreload] E:\envs\transnext\Lib\site-packages\django\db\backends\mysql\base.py changed, reloading.
+INFO 2020-04-19 10:36:52,447 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-19 10:36:54,847 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-19 10:37:10,005 [basehttp] "GET / HTTP/1.1" 200 16351
+INFO 2020-04-19 10:37:10,025 [basehttp] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2020-04-19 10:37:10,101 [basehttp] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2020-04-19 10:37:10,104 [basehttp] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2020-04-19 10:37:10,104 [basehttp] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+WARNING 2020-04-19 10:37:10,126 [log] Not Found: /favicon.ico
+WARNING 2020-04-19 10:37:10,127 [basehttp] "GET /favicon.ico HTTP/1.1" 404 1978
