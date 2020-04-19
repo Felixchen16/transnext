@@ -17,7 +17,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1ahE9xR7VuFBJHo37hIf0rdzTIE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -112,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587179277482</updated>
-      <workItem from="1587179280927" duration="3879000" />
+      <workItem from="1587179280927" duration="8767000" />
     </task>
     <servers />
   </component>
@@ -120,32 +124,40 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="747" y="194" key="#Notifications" timestamp="1587260266815">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="747" y="194" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1587260266815" />
     <state x="416" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587179573629">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="416" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587179573629" />
-    <state width="1240" height="261" key="GridCell.Tab.0.bottom" timestamp="1587187389428">
+    <state x="1011" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587220310745">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1240" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587187389428" />
-    <state width="1240" height="261" key="GridCell.Tab.0.center" timestamp="1587187389428">
+    <state x="1011" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587220310745" />
+    <state width="1240" height="260" key="GridCell.Tab.0.bottom" timestamp="1587221860895">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1240" height="261" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587187389428" />
-    <state width="1240" height="261" key="GridCell.Tab.0.left" timestamp="1587187389428">
+    <state width="1240" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587221860895" />
+    <state width="1240" height="260" key="GridCell.Tab.0.center" timestamp="1587221860894">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1240" height="261" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587187389428" />
-    <state width="1240" height="261" key="GridCell.Tab.0.right" timestamp="1587187389428">
+    <state width="1240" height="260" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587221860894" />
+    <state width="1240" height="260" key="GridCell.Tab.0.left" timestamp="1587221860894">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1240" height="261" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587187389428" />
+    <state width="1240" height="260" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587221860894" />
+    <state width="1240" height="260" key="GridCell.Tab.0.right" timestamp="1587221860894">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1240" height="260" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587221860894" />
     <state x="462" y="162" key="SettingsEditor" timestamp="1587179422555">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="462" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587179422555" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/transnextapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1587180786923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/transnextapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1587219746902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

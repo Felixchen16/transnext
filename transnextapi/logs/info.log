@@ -1,0 +1,21 @@
+INFO 2020-04-18 22:22:22,758 autoreload 11152 8288 Watching for file changes with StatReloader
+INFO 2020-04-18 22:22:27,994 autoreload 12708 600 Watching for file changes with StatReloader
+INFO 2020-04-18 22:23:35,219 basehttp 12708 420 "GET / HTTP/1.1" 200 16351
+INFO 2020-04-18 22:23:35,236 basehttp 12708 420 "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2020-04-18 22:23:35,249 basehttp 12708 8196 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2020-04-18 22:23:35,249 basehttp 12708 5920 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2020-04-18 22:23:35,250 basehttp 12708 420 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2020-04-18 22:24:35,695 autoreload 12708 600 E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-18 22:24:36,288 autoreload Watching for file changes with StatReloader
+INFO 2020-04-18 22:24:40,829 basehttp "GET / HTTP/1.1" 200 16351
+INFO 2020-04-18 22:24:47,709 basehttp "GET / HTTP/1.1" 200 16351
+INFO 2020-04-18 22:28:16,019 autoreload E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-18 22:28:16,600 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-18 22:28:18,309 [basehttp] "GET / HTTP/1.1" 200 16351
+INFO 2020-04-18 22:28:18,681 [basehttp] "GET / HTTP/1.1" 200 16351
+INFO 2020-04-18 22:55:54,197 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-18 22:55:54,769 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-18 22:56:54,129 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-18 22:56:54,736 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-18 22:57:24,465 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-18 22:57:25,068 [autoreload] Watching for file changes with StatReloader
