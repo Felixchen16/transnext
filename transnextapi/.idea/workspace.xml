@@ -2,15 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f6d4cb7-5aa4-4ac0-bcdb-cb9fc5e14cdb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/build/webpack.base.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transnextapi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transnextapi/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/settings/dev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transnextapi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="transnext@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="transnext@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="transnext@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="transnext: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -33,9 +73,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/transnextapi/settings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../transnext_pc" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -123,7 +165,12 @@
       <updated>1587179277482</updated>
       <workItem from="1587179280927" duration="8767000" />
       <workItem from="1587260258082" duration="2076000" />
-      <workItem from="1587263047834" duration="2022000" />
+      <workItem from="1587263047834" duration="2677000" />
+      <workItem from="1587272939140" duration="1817000" />
+      <workItem from="1587345936489" duration="6568000" />
+      <workItem from="1587653048685" duration="1047000" />
+      <workItem from="1587723937771" duration="10695000" />
+      <workItem from="1587780896085" duration="6459000" />
     </task>
     <servers />
   </component>
@@ -135,36 +182,48 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="747" y="194" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1587260266815" />
-    <state x="416" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587179573629">
+    <state x="623" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587780918507">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="416" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587179573629" />
+    <state x="623" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587780918507" />
     <state x="1011" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587220310745">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1011" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587220310745" />
-    <state width="1241" height="322" key="GridCell.Tab.0.bottom" timestamp="1587265369652">
+    <state x="1327" y="281" key="FileChooserDialogImpl" timestamp="1587785976841">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1241" height="322" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587265369652" />
-    <state width="1241" height="322" key="GridCell.Tab.0.center" timestamp="1587265369652">
+    <state x="1327" y="281" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587785976841" />
+    <state width="915" height="317" key="GridCell.Tab.0.bottom" timestamp="1587789646108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1241" height="322" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587265369652" />
-    <state width="1241" height="322" key="GridCell.Tab.0.left" timestamp="1587265369652">
+    <state width="915" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587789646108" />
+    <state width="915" height="317" key="GridCell.Tab.0.center" timestamp="1587789646108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1241" height="322" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587265369652" />
-    <state width="1241" height="322" key="GridCell.Tab.0.right" timestamp="1587265369652">
+    <state width="915" height="317" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587789646108" />
+    <state width="915" height="317" key="GridCell.Tab.0.left" timestamp="1587789646108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1241" height="322" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587265369652" />
-    <state x="462" y="162" key="SettingsEditor" timestamp="1587179422555">
+    <state width="915" height="317" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587789646108" />
+    <state width="915" height="317" key="GridCell.Tab.0.right" timestamp="1587789646108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="462" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587179422555" />
+    <state width="915" height="317" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587789646108" />
+    <state width="214" height="539" key="HiddenNamespacesPopup" timestamp="1587731589779">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="214" height="539" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1587731589779" />
+    <state x="462" y="162" key="SettingsEditor" timestamp="1587740714359">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="462" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587740714359" />
+    <state x="1105" y="256" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1587731834869">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1105" y="256" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587731834869" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/transnextapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1587263813708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/transnextapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1587789239281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

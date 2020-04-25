@@ -30,3 +30,576 @@ INFO 2020-04-19 10:37:10,104 [basehttp] "GET /static/admin/fonts/Roboto-Light-we
 INFO 2020-04-19 10:37:10,104 [basehttp] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
 WARNING 2020-04-19 10:37:10,126 [log] Not Found: /favicon.ico
 WARNING 2020-04-19 10:37:10,127 [basehttp] "GET /favicon.ico HTTP/1.1" 404 1978
+INFO 2020-04-19 13:09:13,704 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-20 09:39:55,116 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-20 09:40:15,263 [basehttp] "GET / HTTP/1.1" 200 16351
+INFO 2020-04-20 09:40:15,299 [basehttp] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2020-04-20 09:40:15,368 [basehttp] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2020-04-20 09:40:15,370 [basehttp] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2020-04-20 09:40:15,370 [basehttp] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+WARNING 2020-04-20 09:40:15,400 [log] Not Found: /favicon.ico
+WARNING 2020-04-20 09:40:15,400 [basehttp] "GET /favicon.ico HTTP/1.1" 404 1978
+INFO 2020-04-20 09:41:25,025 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-20 09:41:25,777 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-20 09:42:07,248 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-20 09:52:44,492 [basehttp] "GET / HTTP/1.1" 200 16351
+INFO 2020-04-20 09:52:44,534 [basehttp] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2020-04-20 09:52:44,545 [basehttp] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2020-04-20 09:52:44,546 [basehttp] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2020-04-20 09:52:44,546 [basehttp] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+WARNING 2020-04-20 09:52:44,584 [log] Not Found: /favicon.ico
+WARNING 2020-04-20 09:52:44,584 [basehttp] "GET /favicon.ico HTTP/1.1" 404 1989
+INFO 2020-04-20 09:52:51,920 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-20 09:52:52,688 [autoreload] Watching for file changes with StatReloader
+ERROR 2020-04-20 09:52:54,378 [exception] Invalid HTTP_HOST header: 'api.transnext.com.hk:8000'. You may need to add 'api.transnext.com.hk' to ALLOWED_HOSTS.
+WARNING 2020-04-20 09:52:54,401 [log] Bad Request: /
+WARNING 2020-04-20 09:52:54,401 [basehttp] "GET / HTTP/1.1" 400 69026
+INFO 2020-04-20 09:53:00,700 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-20 09:53:01,450 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-20 09:53:04,739 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-20 09:53:06,563 [basehttp] "GET / HTTP/1.1" 200 16351
+INFO 2020-04-20 10:02:58,761 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-20 10:02:59,504 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-20 10:03:01,862 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-20 10:03:02,664 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-20 10:03:59,046 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-20 13:40:30,943 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-20 13:40:36,289 [basehttp] "GET / HTTP/1.1" 200 16351
+INFO 2020-04-20 13:40:36,309 [basehttp] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+INFO 2020-04-20 13:40:36,322 [basehttp] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+INFO 2020-04-20 13:40:36,322 [basehttp] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+INFO 2020-04-20 13:40:36,323 [basehttp] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+INFO 2020-04-24 19:29:02,848 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 19:29:29,893 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 19:30:21,796 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 19:33:13,764 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 19:33:37,717 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 19:33:49,445 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 19:37:49,048 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\models.py changed, reloading.
+INFO 2020-04-24 19:37:49,667 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 19:38:37,295 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\models.py changed, reloading.
+INFO 2020-04-24 19:38:37,909 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 19:39:08,599 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\models.py changed, reloading.
+INFO 2020-04-24 19:39:09,207 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 19:39:35,853 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\models.py changed, reloading.
+INFO 2020-04-24 19:39:36,471 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 19:46:01,844 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\models.py changed, reloading.
+INFO 2020-04-24 19:46:02,475 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 20:17:37,783 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\models.py changed, reloading.
+INFO 2020-04-24 20:17:38,412 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 20:18:17,243 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\models.py changed, reloading.
+INFO 2020-04-24 20:18:17,888 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 20:18:31,319 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\models.py changed, reloading.
+INFO 2020-04-24 20:18:31,937 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 20:18:49,418 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\models.py changed, reloading.
+INFO 2020-04-24 20:18:50,020 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 20:20:59,673 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\models.py changed, reloading.
+INFO 2020-04-24 20:21:00,308 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 22:56:10,821 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\urls.py changed, reloading.
+INFO 2020-04-24 22:56:11,466 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 22:57:23,970 [autoreload] Watching for file changes with StatReloader
+WARNING 2020-04-24 22:58:08,312 [log] Not Found: /
+WARNING 2020-04-24 22:58:08,312 [basehttp] "GET / HTTP/1.1" 404 2216
+WARNING 2020-04-24 22:58:08,409 [log] Not Found: /favicon.ico
+WARNING 2020-04-24 22:58:08,410 [basehttp] "GET /favicon.ico HTTP/1.1" 404 2267
+INFO 2020-04-24 22:58:13,827 [basehttp] "GET /banner HTTP/1.1" 301 0
+ERROR 2020-04-24 22:58:13,876 [log] Internal Server Error: /banner/
+Traceback (most recent call last):
+  File "E:\envs\transnext\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\transnext\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\transnext\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\transnext\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\django\views\generic\base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\rest_framework\views.py", line 505, in dispatch
+    response = self.handle_exception(exc)
+  File "E:\envs\transnext\lib\site-packages\rest_framework\views.py", line 465, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "E:\envs\transnext\lib\site-packages\rest_framework\views.py", line 476, in raise_uncaught_exception
+    raise exc
+  File "E:\envs\transnext\lib\site-packages\rest_framework\views.py", line 502, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\rest_framework\generics.py", line 199, in get
+    return self.list(request, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\rest_framework\mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "E:\envs\transnext\lib\site-packages\rest_framework\serializers.py", line 760, in data
+    ret = super().data
+  File "E:\envs\transnext\lib\site-packages\rest_framework\serializers.py", line 260, in data
+    self._data = self.to_representation(self.instance)
+  File "E:\envs\transnext\lib\site-packages\rest_framework\serializers.py", line 677, in to_representation
+    return [
+  File "E:\envs\transnext\lib\site-packages\django\db\models\query.py", line 276, in __iter__
+    self._fetch_all()
+  File "E:\envs\transnext\lib\site-packages\django\db\models\query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "E:\envs\transnext\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "E:\envs\transnext\lib\site-packages\django\db\models\sql\compiler.py", line 1138, in execute_sql
+    sql, params = self.as_sql()
+  File "E:\envs\transnext\lib\site-packages\django\db\models\sql\compiler.py", line 490, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "E:\envs\transnext\lib\site-packages\django\db\models\sql\compiler.py", line 52, in pre_sql_setup
+    order_by = self.get_order_by()
+  File "E:\envs\transnext\lib\site-packages\django\db\models\sql\compiler.py", line 341, in get_order_by
+    order_by.extend(self.find_ordering_name(
+  File "E:\envs\transnext\lib\site-packages\django\db\models\sql\compiler.py", line 720, in find_ordering_name
+    field, targets, alias, joins, path, opts, transform_function = self._setup_joins(pieces, opts, alias)
+  File "E:\envs\transnext\lib\site-packages\django\db\models\sql\compiler.py", line 755, in _setup_joins
+    field, targets, opts, joins, path, transform_function = self.query.setup_joins(pieces, opts, alias)
+  File "E:\envs\transnext\lib\site-packages\django\db\models\sql\query.py", line 1566, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "E:\envs\transnext\lib\site-packages\django\db\models\sql\query.py", line 1482, in names_to_path
+    raise FieldError("Cannot resolve keyword '%s' into field. "
+django.core.exceptions.FieldError: Cannot resolve keyword 'orders' into field. Choices are: id, image_url, is_deleted, is_show, link, order, remark, title
+ERROR 2020-04-24 22:58:13,879 [basehttp] "GET /banner/ HTTP/1.1" 500 166498
+INFO 2020-04-24 22:59:30,629 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\views.py changed, reloading.
+INFO 2020-04-24 22:59:31,233 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 22:59:35,984 [basehttp] "GET /banner/ HTTP/1.1" 200 5192
+INFO 2020-04-24 22:59:36,004 [basehttp] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2020-04-24 22:59:36,006 [basehttp] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2020-04-24 22:59:36,007 [basehttp] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2020-04-24 22:59:36,008 [basehttp] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2020-04-24 22:59:36,009 [basehttp] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2020-04-24 22:59:36,010 [basehttp] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2020-04-24 22:59:36,012 [basehttp] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2020-04-24 22:59:36,012 [basehttp] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2020-04-24 22:59:36,012 [basehttp] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2020-04-24 22:59:36,014 [basehttp] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+INFO 2020-04-24 22:59:36,020 [basehttp] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2020-04-24 23:03:30,124 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\views.py changed, reloading.
+INFO 2020-04-24 23:03:30,734 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:04:02,855 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\views.py changed, reloading.
+INFO 2020-04-24 23:04:03,478 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:38:59,589 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-24 23:39:00,156 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:40:20,867 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-24 23:40:21,447 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:44:45,774 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:49:54,258 [autoreload] E:\envs\transnext\Lib\site-packages\xadmin\__init__.py changed, reloading.
+INFO 2020-04-24 23:49:54,857 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:50:49,695 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:50:57,989 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:52:04,930 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:52:24,423 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:52:31,332 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-24 23:52:31,891 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:53:03,579 [autoreload] E:\envs\transnext\Lib\site-packages\django\utils\__init__.py changed, reloading.
+INFO 2020-04-24 23:53:04,181 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:56:26,452 [autoreload] E:\envs\transnext\Lib\site-packages\xadmin\models.py changed, reloading.
+INFO 2020-04-24 23:56:27,715 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:57:32,116 [autoreload] E:\envs\transnext\Lib\site-packages\xadmin\util.py changed, reloading.
+INFO 2020-04-24 23:57:33,011 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:57:35,066 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-24 23:59:41,201 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\urls.py changed, reloading.
+INFO 2020-04-24 23:59:42,184 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 00:00:38,749 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\urls.py changed, reloading.
+INFO 2020-04-25 00:00:39,736 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 00:00:54,683 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\urls.py changed, reloading.
+INFO 2020-04-25 00:00:55,642 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 00:01:10,607 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\urls.py changed, reloading.
+INFO 2020-04-25 00:01:11,565 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 00:01:13,960 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 00:02:22,990 [basehttp] "GET /xadmin/ HTTP/1.1" 200 4151
+INFO 2020-04-25 00:02:23,005 [basehttp] "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 200 126432
+INFO 2020-04-25 00:02:23,012 [basehttp] "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 200 1888
+INFO 2020-04-25 00:02:23,013 [basehttp] "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 200 175
+INFO 2020-04-25 00:02:23,016 [basehttp] "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 200 8376
+INFO 2020-04-25 00:02:23,021 [basehttp] "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 200 21658
+INFO 2020-04-25 00:02:23,021 [basehttp] "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 200 4361
+INFO 2020-04-25 00:02:23,022 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 200 8195
+INFO 2020-04-25 00:02:23,024 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 4158
+INFO 2020-04-25 00:02:23,026 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 200 15069
+INFO 2020-04-25 00:02:23,027 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 200 4561
+INFO 2020-04-25 00:02:23,028 [basehttp] "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 200 3401
+INFO 2020-04-25 00:02:23,031 [basehttp] "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 200 4165
+INFO 2020-04-25 00:02:23,032 [basehttp] "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 200 58327
+INFO 2020-04-25 00:02:23,032 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 200 42543
+INFO 2020-04-25 00:02:23,033 [basehttp] "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 200 240196
+INFO 2020-04-25 00:02:23,079 [basehttp] "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 200 44432
+INFO 2020-04-25 00:02:28,426 [basehttp] "POST /xadmin/ HTTP/1.1" 302 0
+INFO 2020-04-25 00:02:28,459 [basehttp] "GET /xadmin/ HTTP/1.1" 200 9819
+INFO 2020-04-25 00:02:28,480 [basehttp] "GET /static/xadmin/css/xadmin.page.dashboard.css HTTP/1.1" 200 790
+INFO 2020-04-25 00:02:28,480 [basehttp] "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 200 1000
+INFO 2020-04-25 00:02:28,481 [basehttp] "GET /static/xadmin/js/xadmin.page.dashboard.js HTTP/1.1" 200 3208
+INFO 2020-04-25 00:02:28,488 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 00:02:34,958 [basehttp] "GET /xadmin/auth/user/ HTTP/1.1" 200 29381
+INFO 2020-04-25 00:02:34,978 [basehttp] "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 200 3763
+INFO 2020-04-25 00:02:34,980 [basehttp] "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 200 529
+INFO 2020-04-25 00:02:34,980 [basehttp] "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 200 1990
+INFO 2020-04-25 00:02:34,980 [basehttp] "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 200 2319
+INFO 2020-04-25 00:02:34,983 [basehttp] "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 200 4198
+INFO 2020-04-25 00:02:34,984 [basehttp] "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 200 1105
+INFO 2020-04-25 00:02:34,984 [basehttp] "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 200 1948
+INFO 2020-04-25 00:02:34,987 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 10:15:05,694 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 10:15:33,453 [basehttp] "GET /xadmin/auth/user/ HTTP/1.1" 200 4161
+INFO 2020-04-25 10:15:33,515 [basehttp] "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,515 [basehttp] "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,524 [basehttp] "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,529 [basehttp] "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,531 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 4158
+INFO 2020-04-25 10:15:33,531 [basehttp] "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,535 [basehttp] "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,537 [basehttp] "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,538 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,538 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,540 [basehttp] "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,540 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,541 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,546 [basehttp] "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,548 [basehttp] "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:15:33,608 [basehttp] "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+WARNING 2020-04-25 10:15:33,655 [log] Not Found: /favicon.ico
+WARNING 2020-04-25 10:15:33,655 [basehttp] "GET /favicon.ico HTTP/1.1" 404 2268
+INFO 2020-04-25 10:18:12,382 [basehttp] "POST /xadmin/auth/user/ HTTP/1.1" 302 0
+INFO 2020-04-25 10:18:12,489 [basehttp] "GET /xadmin/auth/user/ HTTP/1.1" 200 29381
+INFO 2020-04-25 10:18:12,512 [basehttp] "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:18:12,514 [basehttp] "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:18:12,514 [basehttp] "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:18:12,514 [basehttp] "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:18:12,515 [basehttp] "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2020-04-25 10:18:12,518 [basehttp] "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:18:12,520 [basehttp] "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:18:12,522 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 10:28:02,919 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 10:28:18,653 [basehttp] "GET /xadmin/auth/user/ HTTP/1.1" 200 33909
+INFO 2020-04-25 10:28:18,674 [basehttp] "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 200 3489
+INFO 2020-04-25 10:28:18,676 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 200 31918
+INFO 2020-04-25 10:28:18,680 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+WARNING 2020-04-25 10:28:18,737 [log] Not Found: /favicon.ico
+WARNING 2020-04-25 10:28:18,737 [basehttp] "GET /favicon.ico HTTP/1.1" 404 2268
+ERROR 2020-04-25 10:28:22,748 [log] Internal Server Error: /xadmin/home/banner/
+Traceback (most recent call last):
+  File "E:\envs\transnext\lib\site-packages\django\db\models\options.py", line 581, in get_field
+    return self.fields_map[field_name]
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\envs\transnext\lib\site-packages\django\contrib\admin\utils.py", line 316, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+  File "E:\envs\transnext\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "E:\envs\transnext\lib\site-packages\django\db\models\options.py", line 583, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Banner has no field named 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\envs\transnext\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\transnext\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\transnext\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\list.py", line 405, in get
+    context = self.get_context()
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 2 more times]
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  [Previous line repeated 2 more times]
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\list.py", line 384, in get_context
+    'result_headers': self.result_headers(),
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\list.py", line 523, in result_headers
+    row.cells = [self.result_header(
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\list.py", line 523, in <listcomp>
+    row.cells = [self.result_header(
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\list.py", line 439, in result_header
+    text, attr = label_for_field(field_name, self.model,
+  File "E:\envs\transnext\lib\site-packages\django\contrib\admin\utils.py", line 341, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'name' on Banner or homebannerAdminListAdminViewModelAdminViewGlobalSettingCommAdminViewBaseSettingBaseAdminViewBaseAdminObjectViewobject
+ERROR 2020-04-25 10:28:22,755 [basehttp] "GET /xadmin/home/banner/ HTTP/1.1" 500 262716
+INFO 2020-04-25 10:29:02,975 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\adminx.py changed, reloading.
+INFO 2020-04-25 10:29:04,147 [autoreload] Watching for file changes with StatReloader
+ERROR 2020-04-25 10:29:04,725 [log] Internal Server Error: /xadmin/home/banner/
+Traceback (most recent call last):
+  File "E:\envs\transnext\lib\site-packages\django\db\models\options.py", line 581, in get_field
+    return self.fields_map[field_name]
+KeyError: 'orders'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\envs\transnext\lib\site-packages\django\contrib\admin\utils.py", line 316, in label_for_field
+    field = _get_non_gfk_field(model._meta, name)
+  File "E:\envs\transnext\lib\site-packages\django\contrib\admin\utils.py", line 293, in _get_non_gfk_field
+    field = opts.get_field(name)
+  File "E:\envs\transnext\lib\site-packages\django\db\models\options.py", line 583, in get_field
+    raise FieldDoesNotExist("%s has no field named '%s'" % (self.object_name, field_name))
+django.core.exceptions.FieldDoesNotExist: Banner has no field named 'orders'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\envs\transnext\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "E:\envs\transnext\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "E:\envs\transnext\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\sites.py", line 300, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\sites.py", line 208, in inner
+    return view(request, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 282, in view
+    return handler(request, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\list.py", line 405, in get
+    context = self.get_context()
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  [Previous line repeated 2 more times]
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  [Previous line repeated 2 more times]
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\list.py", line 384, in get_context
+    'result_headers': self.result_headers(),
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\list.py", line 523, in result_headers
+    row.cells = [self.result_header(
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\list.py", line 523, in <listcomp>
+    row.cells = [self.result_header(
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 80, in method
+    return filter_chain(filters, len(filters) - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 63, in filter_chain
+    return filter_chain(filters, token - 1, _inner_method, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 49, in filter_chain
+    return func()
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 62, in _inner_method
+    return fm(func if fargs[1] == '__' else func(), *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\base.py", line 74, in _inner_method
+    return func(self, *args, **kwargs)
+  File "E:\envs\transnext\lib\site-packages\xadmin\views\list.py", line 439, in result_header
+    text, attr = label_for_field(field_name, self.model,
+  File "E:\envs\transnext\lib\site-packages\django\contrib\admin\utils.py", line 341, in label_for_field
+    raise AttributeError(message)
+AttributeError: Unable to lookup 'orders' on Banner or homebannerAdminListAdminViewModelAdminViewGlobalSettingCommAdminViewBaseSettingBaseAdminViewBaseAdminObjectViewobject
+ERROR 2020-04-25 10:29:04,728 [basehttp] "GET /xadmin/home/banner/ HTTP/1.1" 500 262888
+INFO 2020-04-25 10:29:10,238 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\adminx.py changed, reloading.
+INFO 2020-04-25 10:29:11,341 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 10:29:12,232 [basehttp] "GET /xadmin/home/banner/ HTTP/1.1" 200 24036
+INFO 2020-04-25 10:29:12,265 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 10:29:20,560 [basehttp] "GET /xadmin/home/banner/add/ HTTP/1.1" 200 18094
+INFO 2020-04-25 10:29:20,579 [basehttp] "GET /static/xadmin/js/xadmin.plugin.portal.js HTTP/1.1" 304 0
+INFO 2020-04-25 10:29:20,593 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 10:30:05,261 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\models.py changed, reloading.
+INFO 2020-04-25 10:30:06,384 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 10:33:50,411 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\models.py changed, reloading.
+INFO 2020-04-25 10:33:51,552 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 10:36:02,865 [basehttp] "GET /xadmin/home/banner/add/ HTTP/1.1" 200 19788
+INFO 2020-04-25 10:36:02,890 [basehttp] "GET /static/xadmin/vendor/bootstrap-image-gallery/css/bootstrap-image-gallery.css HTTP/1.1" 200 3339
+INFO 2020-04-25 10:36:02,891 [basehttp] "GET /static/xadmin/vendor/bootstrap-image-gallery/js/bootstrap-image-gallery.js HTTP/1.1" 200 15611
+INFO 2020-04-25 10:36:02,891 [basehttp] "GET /static/xadmin/vendor/load-image/load-image.js HTTP/1.1" 200 8309
+INFO 2020-04-25 10:36:02,898 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 10:38:56,985 [basehttp] "POST /xadmin/home/banner/add/ HTTP/1.1" 302 0
+INFO 2020-04-25 10:38:57,053 [basehttp] "GET /xadmin/home/banner/add/ HTTP/1.1" 200 20143
+INFO 2020-04-25 10:38:57,082 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 10:39:26,010 [basehttp] "POST /xadmin/home/banner/add/ HTTP/1.1" 302 0
+INFO 2020-04-25 10:39:26,075 [basehttp] "GET /xadmin/home/banner/add/ HTTP/1.1" 200 20143
+INFO 2020-04-25 10:39:26,105 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 10:39:52,647 [basehttp] "POST /xadmin/home/banner/add/ HTTP/1.1" 302 0
+INFO 2020-04-25 10:39:52,710 [basehttp] "GET /xadmin/home/banner/ HTTP/1.1" 200 29246
+INFO 2020-04-25 10:39:52,750 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 10:40:05,935 [basehttp] "GET /xadmin/home/banner/3/update/ HTTP/1.1" 200 20311
+INFO 2020-04-25 10:40:05,964 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 10:40:05,966 [basehttp] "GET /media/banner/4-4.jpg HTTP/1.1" 200 424423
+INFO 2020-04-25 10:40:13,941 [basehttp] "GET /xadmin/home/banner/ HTTP/1.1" 200 28942
+INFO 2020-04-25 10:40:13,960 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 10:40:25,332 [basehttp] "GET /banner/ HTTP/1.1" 200 5855
+INFO 2020-04-25 10:40:25,361 [basehttp] "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+INFO 2020-04-25 10:40:25,363 [basehttp] "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2020-04-25 10:40:25,366 [basehttp] "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1131
+INFO 2020-04-25 10:40:25,367 [basehttp] "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+INFO 2020-04-25 10:40:25,367 [basehttp] "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2020-04-25 10:40:25,368 [basehttp] "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+INFO 2020-04-25 10:40:25,370 [basehttp] "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2020-04-25 10:40:25,371 [basehttp] "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2020-04-25 10:40:25,371 [basehttp] "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2020-04-25 10:40:25,371 [basehttp] "GET /static/rest_framework/js/jquery-3.4.1.min.js HTTP/1.1" 200 88145
+INFO 2020-04-25 10:40:25,401 [basehttp] "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2020-04-25 10:41:28,104 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\models.py changed, reloading.
+INFO 2020-04-25 10:41:29,257 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 11:29:40,979 [basehttp] "GET /xadmin/home/banner/ HTTP/1.1" 200 28942
+INFO 2020-04-25 11:29:40,994 [basehttp] "GET /static/xadmin/vendor/bootstrap/css/bootstrap.css HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:40,996 [basehttp] "GET /static/xadmin/css/themes/bootstrap-xadmin.css HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:40,999 [basehttp] "GET /static/xadmin/vendor/font-awesome/css/font-awesome.css HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,007 [basehttp] "GET /static/xadmin/css/xadmin.responsive.css HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,007 [basehttp] "GET /static/xadmin/css/xadmin.main.css HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,008 [basehttp] "GET /static/xadmin/css/xadmin.plugins.css HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,008 [basehttp] "GET /static/xadmin/css/xadmin.form.css HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,011 [basehttp] "GET /static/xadmin/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,011 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.core.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,013 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.widget.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,014 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.mouse.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,015 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.sortable.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,016 [basehttp] "GET /static/xadmin/vendor/bootstrap/js/bootstrap.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,016 [basehttp] "GET /static/xadmin/js/xadmin.main.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,019 [basehttp] "GET /static/xadmin/js/xadmin.plugin.bookmark.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,019 [basehttp] "GET /static/xadmin/js/xadmin.responsive.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,019 [basehttp] "GET /static/xadmin/js/xadmin.plugin.details.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,023 [basehttp] "GET /static/xadmin/js/xadmin.plugin.filters.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,024 [basehttp] "GET /static/xadmin/js/xadmin.plugin.actions.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,024 [basehttp] "GET /static/xadmin/js/xadmin.page.list.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,025 [basehttp] "GET /static/xadmin/js/xadmin.page.form.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:29:41,027 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 11:29:41,037 [basehttp] "GET /static/xadmin/vendor/font-awesome/fonts/fontawesome-webfont.woff?v=4.0.3 HTTP/1.1" 304 0
+INFO 2020-04-25 11:31:19,249 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\apps\home\__init__.py changed, reloading.
+INFO 2020-04-25 11:31:19,942 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 11:31:32,337 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 11:32:04,743 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 11:32:07,537 [basehttp] "GET /xadmin/home/banner/ HTTP/1.1" 200 28948
+INFO 2020-04-25 11:32:07,587 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 11:32:11,898 [basehttp] "GET /xadmin/reversion/revision/ HTTP/1.1" 200 29008
+INFO 2020-04-25 11:32:11,916 [basehttp] "GET /static/xadmin/vendor/bootstrap-datepicker/css/datepicker.css HTTP/1.1" 200 10225
+INFO 2020-04-25 11:32:11,916 [basehttp] "GET /static/xadmin/vendor/select2/select2.css HTTP/1.1" 200 19226
+INFO 2020-04-25 11:32:11,923 [basehttp] "GET /static/xadmin/vendor/selectize/selectize.css HTTP/1.1" 200 8425
+INFO 2020-04-25 11:32:11,925 [basehttp] "GET /static/xadmin/js/xadmin.widget.datetime.js HTTP/1.1" 200 2979
+INFO 2020-04-25 11:32:11,926 [basehttp] "GET /static/xadmin/vendor/selectize/selectize.bootstrap3.css HTTP/1.1" 200 10602
+INFO 2020-04-25 11:32:11,932 [basehttp] "GET /static/xadmin/vendor/jquery-ui/jquery.ui.effect.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:32:11,933 [basehttp] "GET /xadmin/jsi18n/ HTTP/1.1" 200 7722
+INFO 2020-04-25 11:32:11,933 [basehttp] "GET /static/xadmin/vendor/select2/select2_locale_zh-Hans.js HTTP/1.1" 200 694
+INFO 2020-04-25 11:32:11,934 [basehttp] "GET /static/xadmin/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js HTTP/1.1" 200 32656
+INFO 2020-04-25 11:32:11,935 [basehttp] "GET /static/xadmin/vendor/selectize/selectize.js HTTP/1.1" 200 98602
+INFO 2020-04-25 11:32:11,935 [basehttp] "GET /static/xadmin/js/xadmin.widget.select.js HTTP/1.1" 200 1344
+INFO 2020-04-25 11:32:11,937 [basehttp] "GET /static/xadmin/js/xadmin.plugin.themes.js HTTP/1.1" 304 0
+INFO 2020-04-25 11:32:11,937 [basehttp] "GET /static/xadmin/vendor/select2/select2.js HTTP/1.1" 200 104906
+INFO 2020-04-25 11:43:59,782 [basehttp] "GET /banner/ HTTP/1.1" 200 213
+INFO 2020-04-25 11:51:11,872 [basehttp] "GET /banner/ HTTP/1.1" 200 213
+INFO 2020-04-25 11:57:21,375 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 11:57:22,409 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 11:59:34,394 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 11:59:35,420 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:01:32,985 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:01:33,954 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:01:50,065 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:01:51,044 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:01:55,227 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:02:19,256 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:02:20,232 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:02:32,970 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:02:33,944 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:03:18,104 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:03:19,071 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:03:23,641 [basehttp] "GET /banner/ HTTP/1.1" 200 213
+INFO 2020-04-25 12:06:28,649 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:06:29,594 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:09:55,950 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:10:02,502 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:10:06,699 [basehttp] "GET /banner/ HTTP/1.1" 200 213
+INFO 2020-04-25 12:11:14,317 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:11:16,989 [basehttp] "GET /banner/ HTTP/1.1" 200 213
+INFO 2020-04-25 12:33:32,842 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:33:33,825 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:33:37,597 [basehttp] "GET /banner/ HTTP/1.1" 200 213
+INFO 2020-04-25 12:34:01,044 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:34:04,940 [basehttp] "GET /banner/ HTTP/1.1" 200 213
+INFO 2020-04-25 12:35:57,512 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:35:58,479 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:36:51,913 [basehttp] "GET /banner/ HTTP/1.1" 200 213
+INFO 2020-04-25 12:37:09,936 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:37:10,890 [autoreload] Watching for file changes with StatReloader
+ERROR 2020-04-25 12:37:17,300 [exception] Invalid HTTP_HOST header: 'api.transnext.com.hk:8000'. You may need to add 'api.transnext.com.hk' to ALLOWED_HOSTS.
+WARNING 2020-04-25 12:37:17,385 [log] Bad Request: /banner/
+WARNING 2020-04-25 12:37:17,386 [basehttp] "GET /banner/ HTTP/1.1" 400 69882
+INFO 2020-04-25 12:37:36,178 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:37:37,136 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:37:39,400 [basehttp] "GET /banner/ HTTP/1.1" 200 213
+INFO 2020-04-25 12:37:58,992 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:37:59,952 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:38:04,021 [basehttp] "GET /banner/ HTTP/1.1" 200 213
+INFO 2020-04-25 12:40:43,741 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:40:44,732 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:40:49,235 [basehttp] "GET /banner/ HTTP/1.1" 200 213
+INFO 2020-04-25 12:41:10,001 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:41:10,987 [autoreload] Watching for file changes with StatReloader
+INFO 2020-04-25 12:41:11,746 [basehttp] "GET /banner/ HTTP/1.1" 200 213
+INFO 2020-04-25 12:41:43,987 [autoreload] E:\pycode\transnext\transnextapi\transnextapi\settings\dev.py changed, reloading.
+INFO 2020-04-25 12:41:44,965 [autoreload] Watching for file changes with StatReloader
