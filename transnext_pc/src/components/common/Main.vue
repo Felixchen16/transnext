@@ -1,3030 +1,116 @@
 <template>
   <!-- Page Conttent -->
   <main class="page-content">
-
-    <!-- Features Area -->
-    <div class="ho-section features-area bg-white pt-30">
-      <div class="container">
-        <div class="row">
-
-          <!-- Single Feature -->
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="featurebox">
-              <i class="flaticon-shipped"></i>
-              <h5>Free Shipping</h5>
-              <p>Free shipping on all US order or order above $200</p>
-            </div>
-          </div>
-          <!--// Single Feature -->
-
-          <!-- Single Feature -->
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="featurebox">
-              <i class="flaticon-support-1"></i>
-              <h5>Support 24/7</h5>
-              <p>Contact us 24 hours a day, 7 days a week</p>
-            </div>
-          </div>
-          <!--// Single Feature -->
-
-          <!-- Single Feature -->
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="featurebox">
-              <i class="flaticon-money-back"></i>
-              <h5>60-Day Returns</h5>
-              <p>If you don’t love it, you have 60 days to return it.</p>
-            </div>
-          </div>
-          <!--// Single Feature -->
-
-          <!-- Single Feature -->
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="featurebox">
-              <i class="flaticon-credit-card"></i>
-              <h5>100% Payment Secure</h5>
-              <p>We ensure secure payment with PEV</p>
-            </div>
-          </div>
-          <!--// Single Feature -->
-
-        </div>
-      </div>
-    </div>
-    <!--// Features Area -->
-
     <!-- Banners Area -->
-    <div class="banners-area bg-white">
-      <div class="container">
-        <div class="row">
-
-          <!-- Single Banner -->
-          <div class="col-md-4">
-            <div class="imgbanner mt-30">
-              <a href="product-details.html">
-                <img src="../../../static/images/banner/banner-image-12.jpg" alt="bannner image">
-              </a>
-            </div>
-          </div>
-          <!--// Single Banner -->
-
-          <!-- Single Banner -->
-          <div class="col-md-4">
-            <div class="imgbanner mt-30">
-              <a href="product-details.html">
-                <img src="../../../static/images/banner/banner-image-13.jpg" alt="bannner image">
-              </a>
-            </div>
-          </div>
-          <!--// Single Banner -->
-
-          <!-- Single Banner -->
-          <div class="col-md-4">
-            <div class="imgbanner mt-30">
-              <a href="product-details.html">
-                <img src="../../../static/images/banner/banner-image-14.jpg" alt="bannner image">
-              </a>
-            </div>
-          </div>
-          <!--// Single Banner -->
-
+    <div class="banners-area bg-white" style="margin: 0 auto; width: 100%; max-width: 1200px; padding: 1rem 0 0;">
+      <div style="display: table;width: 100%;">
+        <!-- Single Banner -->
+        <div class="main_top" v-bind:key="key" v-for="(banner, key) in main_banner_top">
+          <a v-bind:href="banner.link" target="_blank">
+            <p>{{ banner.title }}</p>
+            <img v-bind:src="banner.image_url" alt="bannner image">
+          </a>
         </div>
+        <!--// Single Banner -->
       </div>
     </div>
     <!--// Banners Area -->
 
-    <!-- Deal Of The Day Area -->
-    <div class="ho-section deal-of-the-day-area bg-white ptb-30">
-      <div class="container">
-        <div class="section-title">
-          <h3>DEAL OF THE DAYS</h3>
+    <!-- Banners Center -->
+    <div style="padding: 1rem 0 0;">
+      <div class="wrap">
+        <div class="listTitle">
+          <div class="listName">
+            <span>WHAT'S NEW AT TRANSNEXT</span>
+          </div>
         </div>
-        <div class="product-slider deal-of-the-day-slider-2 slider-navigation-2 slider-dots">
-
-          <!-- Single Product -->
-          <div class="product-slider-col">
-            <article class="hoproduct hoproduct-2">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-1.jpg"
-                       alt="product image">
-                  <img class="hoproduct-backimage" src="../../../static/images/product/product-image-22.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-pack">New</li>
-                  <li class="flag-discount">-15%</li>
-                </ul>
-              </div>
-              <div class="hoproduct-countdown countdown" data-countdown="2020/12/12"></div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <h6>1 Review(s)</h6>
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                  <span class="discount">-5%</span>
-                </div>
-              </div>
-            </article>
+        <div style="position: relative; height: 916px; display: table; width: 100%;">
+          <!-- 第一列大图广告图 -->
+          <div class="centerBanner" style="position: absolute; left: 0; top: 0;">
+            <a v-bind:href="center_one.link" target="_blank">
+              <img v-bind:src="center_one.image_url" alt="">
+            </a>
           </div>
-          <!--// Single Product -->
+          <!--// 第一列大图广告图 -->
 
-          <!-- Single Product -->
-          <div class="product-slider-col">
-            <article class="hoproduct hoproduct-2">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-16.jpg"
-                       alt="product image">
-                  <img class="hoproduct-backimage" src="../../../static/images/product/product-image-17.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-pack">New</li>
-                </ul>
-              </div>
-              <div class="hoproduct-countdown countdown" data-countdown="2020/11/12"></div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <h6>1 Review(s)</h6>
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                  <span class="discount">-5%</span>
-                </div>
-              </div>
-            </article>
+          <!-- 第一列小图广告图 -->
+          <div class="centerBanner" style="position: absolute; left: 0; top: 600px;">
+            <a v-bind:href="center_two.link" target="_blank">
+              <img v-bind:src="center_two.image_url" alt="">
+            </a>
           </div>
-          <!--// Single Product -->
+          <!--// 第一列小图广告图 -->
 
-          <!-- Single Product -->
-          <div class="product-slider-col">
-            <article class="hoproduct hoproduct-2">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-18.jpg"
-                       alt="product image">
-                  <img class="hoproduct-backimage" src="../../../static/images/product/product-image-19.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-pack">New</li>
-                  <li class="flag-discount">-15%</li>
-                </ul>
-              </div>
-              <div class="hoproduct-countdown countdown" data-countdown="2020/10/12"></div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <h6>1 Review(s)</h6>
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                  <span class="discount">-5%</span>
-                </div>
-              </div>
-            </article>
+          <!-- 第二列小图广告图 -->
+          <div class="centerBanner" style="position: absolute; left: 600px; top: 0;">
+            <a v-bind:href="center_three.link" target="_blank">
+              <img v-bind:src="center_three.image_url" alt="">
+            </a>
           </div>
-          <!--// Single Product -->
+          <!--// 第二列小图广告图 -->
 
-          <!-- Single Product -->
-          <div class="product-slider-col">
-            <article class="hoproduct hoproduct-2">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-14.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-pack">New</li>
-                </ul>
-              </div>
-              <div class="hoproduct-countdown countdown" data-countdown="2020/6/12"></div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <h6>1 Review(s)</h6>
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                  <span class="discount">-5%</span>
-                </div>
-              </div>
-            </article>
+          <!-- 第二列大图广告图 -->
+          <div class="centerBanner" style="position: absolute; left: 600px; top: 316px;">
+            <a v-bind:href="center_four.link" target="_blank">
+              <img v-bind:src="center_four.image_url" alt="">
+            </a>
           </div>
-          <!--// Single Product -->
-
-          <!-- Single Product -->
-          <div class="product-slider-col">
-            <article class="hoproduct hoproduct-2">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-new">new</li>
-                </ul>
-              </div>
-              <div class="hoproduct-countdown countdown" data-countdown="2020/8/12"></div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <h6>1 Review(s)</h6>
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                  <span class="discount">-5%</span>
-                </div>
-              </div>
-            </article>
-          </div>
-          <!--// Single Product -->
-
+          <!--// 第二列大图广告图 -->
         </div>
       </div>
     </div>
-    <!--// Deal Of The Day Area -->
+    <!--// Banners Center -->
 
-    <!-- Our Products Area -->
-    <div class="ho-section ourproducts-area-2 bg-grey ptb-50">
-      <div class="container">
-        <div class="section-title">
-          <h3>OUR PRODUCTS</h3>
-          <ul class="nav mr-0" id="bstab3" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="bstab3-area1-tab" data-toggle="tab" href="#bstab3-area1" role="tab"
-                 aria-controls="bstab3-area1" aria-selected="true">NEW ARRIVAL</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="bstab3-area2-tab" data-toggle="tab" href="#bstab3-area2" role="tab"
-                 aria-controls="bstab3-area2"
-                 aria-selected="false">BESTSELLER</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="bstab3-area3-tab" data-toggle="tab" href="#bstab3-area3" role="tab"
-                 aria-controls="bstab3-area3"
-                 aria-selected="false">FEATURED PRODUCTS</a>
-            </li>
-          </ul>
+    <!-- Banners Footer -->
+    <div>
+      <div class="wrap">
+        <div class="listTitle">
+          <div class="listName">
+            <span>SEE OUR OTHER INNOVATIONS</span>
+          </div>
         </div>
-
-        <div class="tab-content" id="bstab3-ontent">
-          <div class="tab-pane fade show active" id="bstab3-area1" role="tabpanel" aria-labelledby="bstab3-area1-tab">
-
-            <!-- Our Products 2  -->
-            <div class="ourproduct-2">
-              <div class="row no-gutters">
-                <div class="col-lg-5">
-                  <div class="ourproduct-2-banner imgbanner imgbanner-2">
-                    <a href="product-details.html">
-                      <img src="../../../static/images/banner/banner-image-15.jpg" alt="banner image">
-                    </a>
-                  </div>
-                </div>
-                <div class="col-lg-7">
-                  <article class="hoproduct hoproduct-5 ourproduct-2-product">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-1.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-22.jpg"
-                             alt="product image">
-                      </a>
-                      <ul class="hoproduct-flags">
-                        <li class="flag-pack">New</li>
-                        <li class="flag-discount">-15%</li>
-                      </ul>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                      <a href="#" class="ho-button">
-                        <span>Add to Cart</span>
-                      </a>
-                    </div>
-                  </article>
-                </div>
-              </div>
-
-              <div class="product-slider ourproduct-2-slider slider-navigation-3 slider-navigation-3-side">
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-1.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-22.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-7.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-8.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-18.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-19.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-1.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-22.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-7.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-8.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-18.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-19.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-              </div>
+        <div>
+          <div class="slider "
+               style="box-sizing: border-box; display: block; height: inherit; position: relative; width: 100%;">
+            <div aria-live="polite" aria-atomic="true" tabindex="-1"
+                 style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">Slide
+              1 of 3
             </div>
-            <!--// Our Products 2  -->
-
-          </div>
-
-          <div class="tab-pane fade" id="bstab3-area2" role="tabpanel" aria-labelledby="bstab3-area2-tab">
-
-            <!-- Our Products 2  -->
-            <div class="ourproduct-2">
-              <div class="row no-gutters">
-                <div class="col-lg-5">
-                  <div class="ourproduct-2-banner imgbanner imgbanner-2">
-                    <a href="product-details.html">
-                      <img src="../../../static/images/banner/banner-image-15.jpg" alt="banner image">
+            <div class="slider-frame"
+                 style="box-sizing: border-box; display: block; height: 100%; margin: 0; overflow: hidden; padding: 0; position: relative; touch-action: pan-y pinch-zoom; transform: translate3d(0px, 0px, 0px);">
+              <ul class="slider-list"
+                  style="transform: translate3d(0px, 0px, 0px); position: relative; display: block; margin: 0; padding: 0; height: 232px; width: 1200px; cursor: pointer; box-sizing: border-box; touch-action: pan-y pinch-zoom;">
+                <li class="slider-slide slide-visible"
+                    style="box-sizing: border-box; display: inline-block; height: auto; left: 0; list-style-type: none; margin: auto 0; position: absolute; top: 0; transform: scale(1); transition: transform 0.4s linear 0s; vertical-align: top; width: 400px;">
+                  <div class="main_footer">
+                    <a v-bind:href="footer_one.link" target="_blank">
+                      <img v-bind:src="footer_one.image_url" alt="">
                     </a>
                   </div>
-                </div>
-                <div class="col-lg-7">
-                  <article class="hoproduct hoproduct-5 ourproduct-2-product">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-12.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-13.jpg"
-                             alt="product image">
-                      </a>
-                      <ul class="hoproduct-flags">
-                        <li class="flag-pack">New</li>
-                        <li class="flag-discount">-15%</li>
-                      </ul>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                      <a href="#" class="ho-button">
-                        <span>Add to Cart</span>
-                      </a>
-                    </div>
-                  </article>
-                </div>
-              </div>
-
-              <div class="product-slider ourproduct-2-slider slider-navigation-3 slider-navigation-3-side">
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-1.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-22.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-7.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-8.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-18.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-19.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-1.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-22.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-7.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-8.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-18.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-19.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-              </div>
-            </div>
-            <!--// Our Products 2  -->
-
-          </div>
-
-          <div class="tab-pane fade" id="bstab3-area3" role="tabpanel" aria-labelledby="bstab3-area3-tab">
-
-            <!-- Our Products 2  -->
-            <div class="ourproduct-2">
-              <div class="row no-gutters">
-                <div class="col-lg-5">
-                  <div class="ourproduct-2-banner imgbanner imgbanner-2">
-                    <a href="product-details.html">
-                      <img src="../../../static/images/banner/banner-image-15.jpg" alt="banner image">
+                </li>
+                <li class="slider-slide slide-visible"
+                    style="box-sizing: border-box; display: inline-block; height: auto; left: 400px; list-style-type: none; margin: auto 0; position: absolute; top: 0; transform: scale(1); transition: transform 0.4s linear 0s; vertical-align: top; width: 400px;">
+                  <div class="main_footer">
+                    <a v-bind:href="footer_two.link" target="_blank">
+                      <img v-bind:src="footer_two.image_url" alt="">
                     </a>
                   </div>
-                </div>
-                <div class="col-lg-7">
-                  <article class="hoproduct hoproduct-5 ourproduct-2-product">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-10.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-11.jpg"
-                             alt="product image">
-                      </a>
-                      <ul class="hoproduct-flags">
-                        <li class="flag-pack">New</li>
-                        <li class="flag-discount">-15%</li>
-                      </ul>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                      <a href="#" class="ho-button">
-                        <span>Add to Cart</span>
-                      </a>
-                    </div>
-                  </article>
-                </div>
-              </div>
-
-              <div class="product-slider ourproduct-2-slider slider-navigation-3 slider-navigation-3-side">
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-1.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-22.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-7.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-8.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-18.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-19.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-1.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-22.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-7.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-8.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-18.jpg"
-                             alt="product image">
-                        <img class="hoproduct-backimage" src="../../../static/images/product/product-image-19.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-                <div class="product-slider-col">
-                  <!-- Single Product -->
-                  <article class="hoproduct hoproduct-4">
-                    <div class="hoproduct-image">
-                      <a class="hoproduct-thumb" href="product-details.html">
-                        <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                             alt="product image">
-                      </a>
-                    </div>
-                    <div class="hoproduct-content">
-                      <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                        Headphones</a></h5>
-                      <div class="hoproduct-rattingbox">
-                        <div class="rattingbox">
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                          <span class="active"><i class="ion ion-ios-star"></i></span>
-                        </div>
-                      </div>
-                      <div class="hoproduct-pricebox">
-                        <div class="pricebox">
-                          <del class="oldprice">$35.11</del>
-                          <span class="price">$34.11</span>
-                        </div>
-                      </div>
-                    </div>
-                  </article>
-                  <!--// Single Product -->
-                </div>
-
-              </div>
-            </div>
-            <!--// Our Products 2  -->
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--// Our Products Area -->
-
-    <!-- Latest Products -->
-    <div class="ho-section latest-products-area mtb-30">
-      <div class="container">
-        <div class="section-title">
-          <h3>LATEST PRODUCTS</h3>
-        </div>
-        <div class="product-slider new-best-featured-slider slider-navigation-2">
-          <div class="product-slider-col">
-            <!-- Single Product -->
-            <article class="hoproduct">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-1.jpg"
-                       alt="product image">
-                  <img class="hoproduct-backimage" src="../../../static/images/product/product-image-22.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-pack">New</li>
-                  <li class="flag-discount">-15%</li>
-                </ul>
-              </div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!--// Single Product -->
-          </div>
-
-          <div class="product-slider-col">
-            <!-- Single Product -->
-            <article class="hoproduct">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-7.jpg"
-                       alt="product image">
-                  <img class="hoproduct-backimage" src="../../../static/images/product/product-image-8.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-pack">New</li>
-                </ul>
-              </div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!--// Single Product -->
-          </div>
-
-          <div class="product-slider-col">
-            <!-- Single Product -->
-            <article class="hoproduct">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-18.jpg"
-                       alt="product image">
-                  <img class="hoproduct-backimage" src="../../../static/images/product/product-image-19.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-pack">New</li>
-                  <li class="flag-discount">-15%</li>
-                </ul>
-              </div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!--// Single Product -->
-          </div>
-
-          <div class="product-slider-col">
-            <!-- Single Product -->
-            <article class="hoproduct">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-new">new</li>
-                </ul>
-              </div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!--// Single Product -->
-          </div>
-
-          <div class="product-slider-col">
-            <!-- Single Product -->
-            <article class="hoproduct">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-12.jpg"
-                       alt="product image">
-                  <img class="hoproduct-backimage" src="../../../static/images/product/product-image-13.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-new">new</li>
-                </ul>
-              </div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!--// Single Product -->
-          </div>
-
-          <div class="product-slider-col">
-            <!-- Single Product -->
-            <article class="hoproduct">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-10.jpg"
-                       alt="product image">
-                  <img class="hoproduct-backimage" src="../../../static/images/product/product-image-11.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-pack">New</li>
-                  <li class="flag-discount">-15%</li>
-                </ul>
-              </div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!--// Single Product -->
-          </div>
-
-          <div class="product-slider-col">
-            <!-- Single Product -->
-            <article class="hoproduct">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-7.jpg"
-                       alt="product image">
-                  <img class="hoproduct-backimage" src="../../../static/images/product/product-image-8.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-pack">New</li>
-                </ul>
-              </div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!--// Single Product -->
-          </div>
-
-          <div class="product-slider-col">
-            <!-- Single Product -->
-            <article class="hoproduct">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-4.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-pack">New</li>
-                  <li class="flag-discount">-15%</li>
-                </ul>
-              </div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!--// Single Product -->
-          </div>
-
-          <div class="product-slider-col">
-
-            <!-- Single Product -->
-            <article class="hoproduct">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-5.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-pack">New</li>
-                </ul>
-              </div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!--// Single Product -->
-          </div>
-
-          <div class="product-slider-col">
-            <!-- Single Product -->
-            <article class="hoproduct">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-new">new</li>
-                </ul>
-              </div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!--// Single Product -->
-          </div>
-
-          <div class="product-slider-col">
-            <!-- Single Product -->
-            <article class="hoproduct">
-              <div class="hoproduct-image">
-                <a class="hoproduct-thumb" href="product-details.html">
-                  <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-12.jpg"
-                       alt="product image">
-                  <img class="hoproduct-backimage" src="../../../static/images/product/product-image-13.jpg"
-                       alt="product image">
-                </a>
-                <ul class="hoproduct-actionbox">
-                  <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                  <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                  <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                </ul>
-                <ul class="hoproduct-flags">
-                  <li class="flag-new">new</li>
-                </ul>
-              </div>
-              <div class="hoproduct-content">
-                <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear Headphones</a>
-                </h5>
-                <div class="hoproduct-rattingbox">
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                </div>
-                <div class="hoproduct-pricebox">
-                  <div class="pricebox">
-                    <del class="oldprice">$35.11</del>
-                    <span class="price">$34.11</span>
-                  </div>
-                </div>
-              </div>
-            </article>
-            <!--// Single Product -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--// Latest Products -->
-
-    <!-- Banner Area -->
-    <div class="banner-area">
-      <div class="container">
-        <div class="imgbanner imgbanner-2 mt-30">
-          <a href="product-details.html">
-            <img src="../../../static/images/banner/banner-image-6.jpg" alt="banner">
-          </a>
-        </div>
-      </div>
-    </div>
-    <!--// Banner Area -->
-
-    <!-- Trending Products Area -->
-    <div class="trending-products-area ptb-30">
-      <div class="container">
-        <div class="section-title">
-          <h3>TRENDING PRODUCTS</h3>
-          <ul class="nav" id="bstab1" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="bstab1-area1-tab" data-toggle="tab" href="#bstab1-area1" role="tab"
-                 aria-controls="bstab1-area1" aria-selected="true">ELECTRONICS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="bstab1-area2-tab" data-toggle="tab" href="#bstab1-area2" role="tab"
-                 aria-controls="bstab1-area2"
-                 aria-selected="false">SMARTPHONE & TABLETS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="bstab1-area3-tab" data-toggle="tab" href="#bstab1-area3" role="tab"
-                 aria-controls="bstab1-area3"
-                 aria-selected="false">Accessories</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="tab-content" id="bstab1-ontent">
-          <div class="tab-pane fade show active" id="bstab1-area1" role="tabpanel" aria-labelledby="bstab1-area1-tab">
-            <div class="product-slider trending-products-slider-2 slider-navigation-2">
-
-              <div class="product-slider-col">
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-1.jpg"
-                           alt="product image">
-                      <img class="hoproduct-backimage" src="../../../static/images/product/product-image-22.jpg"
-                           alt="product image">
+                </li>
+                <li class="slider-slide slide-visible"
+                    style="box-sizing: border-box; display: inline-block; height: auto; left: 800px; list-style-type: none; margin: auto 0; position: absolute; top: 0; transform: scale(1); transition: transform 0.4s linear 0s; vertical-align: top; width: 400px;">
+                  <div class="main_footer">
+                    <a v-bind:href="footer_three.link" target="_blank">
+                      <img v-bind:src="footer_three.image_url" alt="">
                     </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                      <li class="flag-discount">-15%</li>
-                    </ul>
                   </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-16.jpg"
-                           alt="product image">
-                      <img class="hoproduct-backimage" src="../../../static/images/product/product-image-17.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-              </div>
-
-              <div class="product-slider-col">
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-18.jpg"
-                           alt="product image">
-                      <img class="hoproduct-backimage" src="../../../static/images/product/product-image-19.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                      <li class="flag-discount">-15%</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-14.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-              </div>
-
-              <div class="product-slider-col">
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-new">new</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-12.jpg"
-                           alt="product image">
-                      <img class="hoproduct-backimage" src="../../../static/images/product/product-image-13.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-new">new</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-              </div>
-
-              <div class="product-slider-col">
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-new">new</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-12.jpg"
-                           alt="product image">
-                      <img class="hoproduct-backimage" src="../../../static/images/product/product-image-13.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-new">new</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-              </div>
-
-            </div>
-          </div>
-          <div class="tab-pane fade" id="bstab1-area2" role="tabpanel" aria-labelledby="bstab1-area2-tab">
-            <div class="product-slider trending-products-slider-2 slider-navigation-2">
-
-              <div class="product-slider-col">
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-10.jpg"
-                           alt="product image">
-                      <img class="hoproduct-backimage" src="../../../static/images/product/product-image-11.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                      <li class="flag-discount">-15%</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-7.jpg"
-                           alt="product image">
-                      <img class="hoproduct-backimage" src="../../../static/images/product/product-image-8.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-              </div>
-
-              <div class="product-slider-col">
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-4.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                      <li class="flag-discount">-15%</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-5.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-              </div>
-
-              <div class="product-slider-col">
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-new">new</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-12.jpg"
-                           alt="product image">
-                      <img class="hoproduct-backimage" src="../../../static/images/product/product-image-13.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-new">new</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-              </div>
-
-              <div class="product-slider-col">
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-1.jpg"
-                           alt="product image">
-                      <img class="hoproduct-backimage" src="../../../static/images/product/product-image-22.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                      <li class="flag-discount">-15%</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-16.jpg"
-                           alt="product image">
-                      <img class="hoproduct-backimage" src="../../../static/images/product/product-image-17.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-              </div>
-
-            </div>
-          </div>
-          <div class="tab-pane fade" id="bstab1-area3" role="tabpanel" aria-labelledby="bstab1-area3-tab">
-            <div class="product-slider trending-products-slider-2 slider-navigation-2">
-
-              <div class="product-slider-col">
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-6.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                      <li class="flag-discount">-15%</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-1.jpg"
-                           alt="product image">
-                      <img class="hoproduct-backimage" src="../../../static/images/product/product-image-2.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-              </div>
-
-              <div class="product-slider-col">
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-9.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                      <li class="flag-discount">-15%</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-14.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-pack">New</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-              </div>
-
-              <div class="product-slider-col">
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-new">new</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-new">new</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-              </div>
-
-              <div class="product-slider-col">
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-15.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-new">new</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-
-                <!-- Single Product -->
-                <article class="hoproduct hoproduct-3">
-                  <div class="hoproduct-image">
-                    <a class="hoproduct-thumb" href="product-details.html">
-                      <img class="hoproduct-frontimage" src="../../../static/images/product/product-image-12.jpg"
-                           alt="product image">
-                      <img class="hoproduct-backimage" src="../../../static/images/product/product-image-13.jpg"
-                           alt="product image">
-                    </a>
-                    <ul class="hoproduct-actionbox">
-                      <li><a href="#"><i class="lnr lnr-cart"></i></a></li>
-                      <li><a href="#" class="quickview-trigger"><i class="lnr lnr-eye"></i></a></li>
-                      <li><a href="#"><i class="lnr lnr-heart"></i></a></li>
-                    </ul>
-                    <ul class="hoproduct-flags">
-                      <li class="flag-new">new</li>
-                    </ul>
-                  </div>
-                  <div class="hoproduct-content">
-                    <h5 class="hoproduct-title"><a href="product-details.html">SonicFuel Wireless Over-Ear
-                      Headphones</a></h5>
-                    <div class="hoproduct-rattingbox">
-                      <div class="rattingbox">
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                        <span class="active"><i class="ion ion-ios-star"></i></span>
-                      </div>
-                    </div>
-                    <div class="hoproduct-pricebox">
-                      <div class="pricebox">
-                        <del class="oldprice">$35.11</del>
-                        <span class="price">$34.11</span>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-                <!--// Single Product -->
-              </div>
-
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--// Trending Products Area -->
-
-    <!-- Brand Logo Area -->
-    <div class="ho-section brand-logos-area">
-      <div class="container">
-        <div class="brand-logo-slider cr-border slider-navigation-3 slider-navigation-3-side2">
-
-          <div class="brandlogo brandlogo-2">
-            <a href="#">
-              <img src="../../../static/images/brandlogo/brand-logo-1.jpg" alt="brand logo">
-            </a>
-          </div>
-
-          <div class="brandlogo brandlogo-2">
-            <a href="#">
-              <img src="../../../static/images/brandlogo/brand-logo-2.jpg" alt="brand logo">
-            </a>
-          </div>
-
-          <div class="brandlogo brandlogo-2">
-            <a href="#">
-              <img src="../../../static/images/brandlogo/brand-logo-3.jpg" alt="brand logo">
-            </a>
-          </div>
-
-          <div class="brandlogo brandlogo-2">
-            <a href="#">
-              <img src="../../../static/images/brandlogo/brand-logo-4.jpg" alt="brand logo">
-            </a>
-          </div>
-
-          <div class="brandlogo brandlogo-2">
-            <a href="#">
-              <img src="../../../static/images/brandlogo/brand-logo-5.jpg" alt="brand logo">
-            </a>
-          </div>
-
-          <div class="brandlogo brandlogo-2">
-            <a href="#">
-              <img src="../../../static/images/brandlogo/brand-logo-1.jpg" alt="brand logo">
-            </a>
-          </div>
-
-          <div class="brandlogo brandlogo-2">
-            <a href="#">
-              <img src="../../../static/images/brandlogo/brand-logo-2.jpg" alt="brand logo">
-            </a>
-          </div>
-
-          <div class="brandlogo brandlogo-2">
-            <a href="#">
-              <img src="../../../static/images/brandlogo/brand-logo-3.jpg" alt="brand logo">
-            </a>
-          </div>
-
-          <div class="brandlogo brandlogo-2">
-            <a href="#">
-              <img src="../../../static/images/brandlogo/brand-logo-4.jpg" alt="brand logo">
-            </a>
-          </div>
-
-          <div class="brandlogo brandlogo-2">
-            <a href="#">
-              <img src="../../../static/images/brandlogo/brand-logo-5.jpg" alt="brand logo">
-            </a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--// Brand Logo Area -->
-
-    <!-- Latest Blog Area -->
-    <div class="ho-section latest-blog-area bg-white ptb-40">
-      <div class="container">
-        <div class="section-title">
-          <h3>LATEST BLOGS</h3>
-        </div>
-        <div class="product-slider blogitem-slider slider-navigation-2">
-
-          <div class="product-slider-col">
-            <!-- Single Blog -->
-            <article class="blogitem">
-              <div class="blogitem-thumb">
-                <a href="blog-details.html">
-                  <img src="../../../static/images/blog/blog-item-image-1.jpg" alt="blog item image">
-                </a>
-              </div>
-              <div class="blogitem-content">
-                <h4 class="blogitem-title"><a href="blog-details.html">This is First Post For XipBlog</a></h4>
-                <div class="blogitem-meta">
-                  <span class="blogitem-date"><i class="ion ion-md-calendar"></i> July 11, 2018</span>
-                  <span class="blogitem-author"><a href="blog.html"><i class="ion ion-md-person"></i>By Admin</a></span>
-                </div>
-              </div>
-            </article>
-            <!--// Single Blog -->
-          </div>
-
-          <div class="product-slider-col">
-            <!-- Single Blog -->
-            <article class="blogitem">
-              <div class="blogitem-thumb">
-                <a href="blog-details.html">
-                  <img src="../../../static/images/blog/blog-item-image-2.jpg" alt="blog item image">
-                </a>
-              </div>
-              <div class="blogitem-content">
-                <h4 class="blogitem-title"><a href="blog-details.html">This is Secound Post For XipBlog</a></h4>
-                <div class="blogitem-meta">
-                  <span class="blogitem-date"><i class="ion ion-md-calendar"></i> July 11, 2018</span>
-                  <span class="blogitem-author"><a href="blog.html"><i class="ion ion-md-person"></i>By Admin</a></span>
-                </div>
-              </div>
-            </article>
-            <!--// Single Blog -->
-          </div>
-
-          <div class="product-slider-col">
-            <!-- Single Blog -->
-            <article class="blogitem">
-              <div class="blogitem-thumb">
-                <a href="blog-details.html">
-                  <img src="../../../static/images/blog/blog-item-image-3.jpg" alt="blog item image">
-                </a>
-              </div>
-              <div class="blogitem-content">
-                <h4 class="blogitem-title"><a href="blog-details.html">This is Third Post For XipBlog</a></h4>
-                <div class="blogitem-meta">
-                  <span class="blogitem-date"><i class="ion ion-md-calendar"></i> July 11, 2018</span>
-                  <span class="blogitem-author"><a href="blog.html"><i class="ion ion-md-person"></i>By Admin</a></span>
-                </div>
-              </div>
-            </article>
-            <!--// Single Blog -->
-          </div>
-
-          <div class="product-slider-col">
-            <!-- Single Blog -->
-            <article class="blogitem">
-              <div class="blogitem-thumb">
-                <a href="blog-details.html">
-                  <img src="../../../static/images/blog/blog-item-image-4.jpg" alt="blog item image">
-                </a>
-              </div>
-              <div class="blogitem-content">
-                <h4 class="blogitem-title"><a href="blog-details.html">This is Fourth Post For XipBlog</a></h4>
-                <div class="blogitem-meta">
-                  <span class="blogitem-date"><i class="ion ion-md-calendar"></i> July 11, 2018</span>
-                  <span class="blogitem-author"><a href="blog.html"><i class="ion ion-md-person"></i>By Admin</a></span>
-                </div>
-              </div>
-            </article>
-            <!--// Single Blog -->
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--// Latest Blog Area -->
-
-    <!-- Newsletter Area -->
-    <div class="ho-section newsletter-area bg-grey ptb-50">
-      <div class="container">
-        <div class="newsletter">
-          <div class="newsletter-title">
-            <h2>Subscribe to our <span>Newsletter!</span></h2>
-
-          </div>
-          <div class="newsletter-content">
-            <form id="mc-form" class="newsletter-form">
-              <input id="mc-email" type="email" autocomplete="off" placeholder="Your email address...">
-              <button id="mc-submit" type="submit">Subscribe</button>
-            </form>
-            <!-- mailchimp-alerts start -->
-            <div class="mailchimp-alerts text-centre">
-              <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-              <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-              <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-            </div><!-- mailchimp-alerts end -->
-          </div>
-          <div class="newsletter-socialicons socialicons socialicons-radial">
-            <ul>
-              <li><a href="#"><i class="ion ion-logo-facebook"></i></a></li>
-              <li><a href="#"><i class="ion ion-logo-twitter"></i></a></li>
-              <li><a href="#"><i class="ion ion-logo-youtube"></i></a></li>
-              <li><a href="#"><i class="ion ion-logo-google"></i></a></li>
-              <li><a href="#"><i class="ion ion-logo-instagram"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--// Newsletter Area -->
+    <!--// Banners Footer -->
 
   </main>
   <!--// Page Conttent -->
@@ -3033,12 +119,218 @@
 <script>
   export default {
     data() {
-      return {};
+      return {
+        main_banner_list: [],
+        main_banner_top: [],
+        main_banner_footer: [],
+        center_banner_list: [],
+        footer_one: {},
+        footer_two: {},
+        footer_three: {},
+        center_one: {},
+        center_two: {},
+        center_three: {},
+        center_four: {},
+      };
     },
-    methods: {}
+    created() {
+      this.get_main_banner_list();
+      this.get_center_banner_list()
+    },
+    watch: {
+      main_banner_list: function (items) {
+        // 监听横幅广告数据
+        items.forEach(v => {
+          if (v.position === 1) {
+            this.main_banner_top.push(v)
+          } else {
+            this.main_banner_footer.push(v)
+          }
+        });
+        this.footer_one = this.main_banner_footer[0];
+        this.footer_two = this.main_banner_footer[1];
+        this.footer_three = this.main_banner_footer[2]
+      },
+      center_banner_list: function (items) {
+        // 监听中间广告数据
+        items.forEach(v => {
+          if (v.position === 1) {
+            this.center_one = v
+          }
+          if (v.position === 2) {
+            this.center_two = v
+          }
+          if (v.position === 3) {
+            this.center_three = v
+          }
+          if (v.position === 4) {
+            this.center_four = v
+          }
+        })
+      },
+    },
+    methods: {
+      get_main_banner_list: function () {
+        // 获取横幅广告信息
+        this.$axios.get(`${this.$settings.HOST}/main/banner/`, {}).then(response => {
+          this.main_banner_list = response.data
+        }).catch(error => {
+          console.log(error.response)
+        })
+      },
+      get_center_banner_list: function () {
+        // 获取中间广告信息
+        this.$axios.get(`${this.$settings.HOST}/main/center/banner/`, {}).then(response => {
+          this.center_banner_list = response.data
+        }).catch(error => {
+          console.log(error.response)
+        })
+      },
+    }
   }
 </script>
 
 <style scoped>
+  .main_top {
+    display: inline-block;
+    width: 33.333333%;
+    padding: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
+  .main_top a {
+    -webkit-transition: .4s;
+    transition: .4s;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    float: left;
+    color: #323232;
+    width: 100%;
+  }
+
+  .main_top p {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+    font-size: 13px;
+    font-weight: bold
+  }
+
+  .main_top a:hover {
+    -webkit-box-shadow: #ccc 0 5px 30px;
+    -moz-box-shadow: #ccc 0 5px 30px;
+    box-shadow: #ccc 0 5px 30px;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  .wrap {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .listTitle {
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+
+  .listTitle .listName {
+    position: relative;
+  }
+
+  .listTitle .listName:after {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    content: "";
+    border-top: 1px solid #cfcfcf;
+  }
+
+  .listTitle .listName span {
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    z-index: 2;
+    background: #fff;
+    padding: 0 2rem;
+    font-weight: bold
+  }
+
+  .centerBanner {
+    float: left;
+    width: 50%;
+    padding: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .centerBanner a {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: .4s;
+    transition: .4s;
+    color: #323232;
+  }
+
+  .centerBanner a:hover {
+    -webkit-box-shadow: #ccc 0 5px 30px;
+    -moz-box-shadow: #ccc 0 5px 30px;
+    box-shadow: #ccc 0 5px 30px;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  .centerBanner a img {
+    z-index: 1;
+    float: left;
+    width: 100%;
+  }
+
+  .slider-slide > img {
+    width: 100%;
+    display: block;
+  }
+
+  .slider-slide > img:focus {
+    margin: auto;
+  }
+
+  .main_footer {
+    display: inline-block;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .main_footer a {
+    -webkit-transition: .4s;
+    transition: .4s;
+    position: relative;
+    float: left;
+  }
+
+  .main_footer a:hover {
+    -webkit-box-shadow: #ccc 0 -1px 5px;
+    -moz-box-shadow: #ccc 0 -1px 5px;
+    box-shadow: #ccc 0 5px 12px;
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
 </style>

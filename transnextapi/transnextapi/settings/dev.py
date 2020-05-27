@@ -48,9 +48,14 @@ INSTALLED_APPS = [
     'xadmin',
     'crispy_forms',
     'reversion',
+    'django_filters',
+    'ckeditor',
+    'ckeditor_uploader',
 
     # 子应用
     'transnextapi.apps.home',
+    'transnextapi.apps.products',
+    'transnextapi.apps.contact',
 ]
 
 # CORS组的配置信息
@@ -207,3 +212,13 @@ REST_FRAMEWORK = {
     # 异常处理
     'EXCEPTION_HANDLER': 'transnextapi.utils.exceptions.custom_exception_handler',
 }
+
+# 富文本编辑器
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+        'height': 300,
+        'width': 'auto',
+    },
+}
+CKEDITOR_UPLOAD_PATH = ''

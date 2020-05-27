@@ -2,18 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f6d4cb7-5aa4-4ac0-bcdb-cb9fc5e14cdb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transnext_pc/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/build/webpack.base.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transnext_pc/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/config/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transnext_pc/static/images/support/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transnext_pc/static/images/support/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../transnext_pc/static/images/support/3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../transnext_pc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../transnext_pc/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../transnext_pc/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../transnext_pc/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/src/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/src/components/common/Banner.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/src/components/common/Banner.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/src/components/common/Banner1.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/src/components/common/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/src/components/common/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/src/components/common/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/src/components/common/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/src/components/common/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/src/components/common/Main.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../transnext_pc/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../transnext_pc/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/static/images/banner/banner-image-12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/static/images/banner/banner-image-12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/static/images/banner/banner-image-13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/static/images/banner/banner-image-13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/static/images/banner/banner-image-14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/static/images/banner/banner-image-14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/static/images/blog/blog-item-image-1-lg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/static/images/blog/blog-item-image-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/static/images/blog/blog-item-image-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/static/images/blog/blog-item-image-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/static/images/blog/blog-item-image-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transnext_pc/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../transnext_pc/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transnextapi/apps/home/adminx.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/apps/home/adminx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transnextapi/apps/home/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/apps/home/apps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transnextapi/apps/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/apps/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transnextapi/apps/home/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/apps/home/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transnextapi/apps/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/apps/home/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transnextapi/apps/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/apps/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/transnextapi/settings/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/settings/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transnextapi/settings/dev.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/settings/dev.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/transnextapi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/transnextapi/urls.py" afterDir="false" />
     </list>
@@ -65,6 +86,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Felixchen16/transnext.git" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1ahE9xR7VuFBJHo37hIf0rdzTIE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -77,15 +105,42 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../transnext_pc" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/transnextapi/apps/contact" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\pycode\transnext\transnextapi\transnextapi\apps\contact" />
+      <recent name="E:\pycode\transnext\transnextapi\transnextapi\apps\products" />
       <recent name="E:\pycode\transnext\transnextapi\transnextapi\settings" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\pycode\transnext\transnextapi\transnextapi\apps" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.manage">
+  <component name="RunManager" selected="Django server.transnextapi">
+    <configuration name="args" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="transnextapi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../.." />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../args.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="transnextapi" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -101,6 +156,28 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
       <option name="PARAMETERS" value="runserver 0.0.0.0:8000" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="serializers" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="transnextapi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/transnextapi/apps/home" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/transnextapi/apps/home/serializers.py" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -134,9 +211,13 @@
     <list>
       <item itemvalue="Django server.transnextapi" />
       <item itemvalue="Python.manage" />
+      <item itemvalue="Python.serializers" />
+      <item itemvalue="Python.args" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.args" />
+        <item itemvalue="Python.serializers" />
         <item itemvalue="Python.manage" />
       </list>
     </recent_temporary>
@@ -170,7 +251,30 @@
       <workItem from="1587345936489" duration="6568000" />
       <workItem from="1587653048685" duration="1047000" />
       <workItem from="1587723937771" duration="10695000" />
-      <workItem from="1587780896085" duration="6459000" />
+      <workItem from="1587780896085" duration="13020000" />
+      <workItem from="1587889761524" duration="4033000" />
+      <workItem from="1587977757770" duration="8182000" />
+      <workItem from="1588130434179" duration="611000" />
+      <workItem from="1588585786270" duration="7319000" />
+      <workItem from="1588645219071" duration="7133000" />
+      <workItem from="1589029638021" duration="3847000" />
+      <workItem from="1589102591546" duration="6600000" />
+      <workItem from="1589166006930" duration="2683000" />
+      <workItem from="1589244206634" duration="8201000" />
+      <workItem from="1589283289516" duration="6516000" />
+      <workItem from="1589335111083" duration="8140000" />
+      <workItem from="1589414621192" duration="2195000" />
+      <workItem from="1589505719600" duration="1191000" />
+      <workItem from="1589642179863" duration="1310000" />
+      <workItem from="1589680325226" duration="630000" />
+      <workItem from="1589762886094" duration="775000" />
+      <workItem from="1589844873101" duration="3783000" />
+      <workItem from="1590112170074" duration="1236000" />
+      <workItem from="1590209953673" duration="795000" />
+      <workItem from="1590283750867" duration="2496000" />
+      <workItem from="1590365214712" duration="11126000" />
+      <workItem from="1590453497871" duration="17140000" />
+      <workItem from="1590539515920" duration="10853000" />
     </task>
     <servers />
   </component>
@@ -182,48 +286,70 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="747" y="194" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1587260266815" />
-    <state x="623" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587780918507">
+    <state x="623" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587995595820">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587780918507" />
+    <state x="623" y="136" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587995595820" />
     <state x="1011" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587220310745">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1011" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1587220310745" />
-    <state x="1327" y="281" key="FileChooserDialogImpl" timestamp="1587785976841">
+    <state x="1327" y="281" key="FileChooserDialogImpl" timestamp="1590283760615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1327" y="281" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587785976841" />
-    <state width="915" height="317" key="GridCell.Tab.0.bottom" timestamp="1587789646108">
+    <state x="1327" y="281" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590283760615" />
+    <state width="1878" height="308" key="GridCell.Tab.0.bottom" timestamp="1590571956599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="915" height="317" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1587789646108" />
-    <state width="915" height="317" key="GridCell.Tab.0.center" timestamp="1587789646108">
+    <state width="1878" height="308" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590571956599" />
+    <state width="1878" height="308" key="GridCell.Tab.0.center" timestamp="1590571956599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="915" height="317" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1587789646108" />
-    <state width="915" height="317" key="GridCell.Tab.0.left" timestamp="1587789646108">
+    <state width="1878" height="308" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590571956599" />
+    <state width="1878" height="308" key="GridCell.Tab.0.left" timestamp="1590571956598">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="915" height="317" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1587789646108" />
-    <state width="915" height="317" key="GridCell.Tab.0.right" timestamp="1587789646108">
+    <state width="1878" height="308" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590571956598" />
+    <state width="1878" height="308" key="GridCell.Tab.0.right" timestamp="1590571956599">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="915" height="317" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1587789646108" />
+    <state width="1878" height="308" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590571956599" />
+    <state width="915" height="322" key="GridCell.Tab.1.bottom" timestamp="1588691392473">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="915" height="322" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588691392473" />
+    <state width="915" height="322" key="GridCell.Tab.1.center" timestamp="1588691392473">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="915" height="322" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588691392473" />
+    <state width="915" height="322" key="GridCell.Tab.1.left" timestamp="1588691392473">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="915" height="322" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588691392473" />
+    <state width="915" height="322" key="GridCell.Tab.1.right" timestamp="1588691392473">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="915" height="322" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588691392473" />
     <state width="214" height="539" key="HiddenNamespacesPopup" timestamp="1587731589779">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="214" height="539" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1587731589779" />
-    <state x="462" y="162" key="SettingsEditor" timestamp="1587740714359">
+    <state x="462" y="162" key="SettingsEditor" timestamp="1587986892186">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="462" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587740714359" />
+    <state x="462" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587986892186" />
     <state x="1105" y="256" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1587731834869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1105" y="256" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587731834869" />
+    <state x="1099" y="180" width="672" height="676" key="search.everywhere.popup" timestamp="1590418131537">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1099" y="180" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1590418131537" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/transnextapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1587789239281" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/transnextapi$args.coverage" NAME="args Coverage Results" MODIFIED="1590453513030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../.." />
+    <SUITE FILE_PATH="coverage/transnextapi$manage.coverage" NAME="manage Coverage Results" MODIFIED="1588683190531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/transnextapi$serializers.coverage" NAME="serializers Coverage Results" MODIFIED="1589029665198" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/transnextapi/apps/home" />
   </component>
 </project>

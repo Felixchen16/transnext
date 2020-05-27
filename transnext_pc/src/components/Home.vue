@@ -1,12 +1,8 @@
 <template>
-  <!--[if lte IE 9]>
-  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a
-    href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-  <div id="wrapper" class="wrapper">
+<div>
     <Header/>
     <Banner/>
-<!--    <Main/>-->
+    <Main/>
     <Footer/>
   </div>
 </template>
@@ -16,6 +12,7 @@
   import Banner from "./common/Banner"
   import Footer from "./common/Footer"
   import Main from "./common/Main"
+
   export default {
     name: "Home",
     data() {

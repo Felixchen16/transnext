@@ -23,7 +23,7 @@
         value3: 0,
         setting: {
           autoplay: true,
-          autoplaySpeed: 3000,
+          autoplaySpeed: 5000,
           dots: 'inside',
           radiusDot: true,
           trigger: 'click',

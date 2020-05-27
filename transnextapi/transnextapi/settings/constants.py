@@ -1,2 +1,14 @@
 # 首页展示图数量
 BANNER_LENGTH = 5
+
+# 顶部导航数量
+HEADER_NAV_LENGTH = 5
+
+# 脚部导航数量
+FOOTER_NAV_LENGTH = 6
+
+# 横幅广告数量
+MAIN_BANNER_LENGTH = 6
+
+# 中间广告数量
+CENTER_BANNER_LENGTH = 4

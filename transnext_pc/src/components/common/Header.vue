@@ -2,77 +2,72 @@
   <!-- Header -->
   <header class="header header-2">
     <!-- Header Bottom Area -->
-    <div class="header-bottom" v-bind:class="{ 'header-white': isActive }">
+    <div class="header-bottom" v-bind:class="{ 'header-white': isActive || isShow }">
       <div class="container">
         <div class="row align-items-center">
 
-            <a href="/"><img src="../../../static/images/logo/logo_new.png" alt="TransNext"></a>
+            <a href="/">
+              <img src="../../../static/images/logo/logo_new.png" style="width: 200px; height: 60px;" alt="TransNext">
+            </a>
 
           <div class="col-lg-7 col-md-5 col-sm-5">
             <!-- Navigation -->
             <nav class="ho-navigation ho-navigation-2">
               <ul v-on:mouseover="mouseover" v-on:mouseout="mouseout">
                 <li class="dropdown-holder ">
-                  <a href="index.html" class="hodropdown3">Home</a>
+                  <router-link to="/" class="hodropdown3">Home</router-link>
                 </li>
                 <li class="dropdown-holder">
-                  <a href="shop-rightsidebar.html" class="hodropdown3">Products
+                  <a href="javascript:void(0);"
+                     class="hodropdown3"
+                     v-bind:style="{ color: products_color }">
+                    Products
                     <Icon type="ios-arrow-down" size="16"/>
                   </a>
                   <ul class="hodropdown">
-                    <li><a href="shop-rightsidebar.html">Shop Grid</a>
-                      <ul>
-                        <li><a href="shop-rightsidebar.html">Shop Right Sidebar</a></li>
-                        <li><a href="shop-leftsidebar.html">Shop Left Sidebar</a></li>
-                        <li><a href="shop-3-column.html">Shop 3 Column</a></li>
-                        <li><a href="shop-4-column.html">Shop 4 Column</a></li>
-                        <li><a href="shop-list.html">Shop List</a></li>
-                        <li><a href="shop-list-rightsidebar.html">Shop List Right Sidebar</a></li>
-                        <li><a href="shop-list-leftsidebar.html">Shop List Left Sidebar</a></li>
+                    <li v-bind:key="index" v-for="(item, index) in menu_product">
+                      <router-link v-bind:to="'/categroy/' + item.id + item.link">{{ item.title }}</router-link>
+                      <ul v-if="item.children">
+                        <li v-bind:key="index" v-for="(child, index) in item.children">
+                          <router-link v-bind:to="'/products/' + child.id + child.link">{{ child.title }}</router-link>
+                        </li>
                       </ul>
                     </li>
-                    <li><a href="product-details.html">Product Details</a>
-                      <ul>
-                        <li><a href="product-details.html">Product Details</a></li>
-                        <li><a href="product-details-reverse.html">Product Details Reverse</a></li>
-                        <li><a href="product-details-variable.html">Product Details Variable</a></li>
-                        <li><a href="product-details-vertical.html">Product Details Vertical</a></li>
-                        <li><a href="product-details-gallery.html">Product Details Gallery</a></li>
-                        <li><a href="product-details-group.html">Product Details Group</a></li>
-                        <li><a href="product-details-affiliate.html">Product Details Affiliate</a></li>
-                        <li><a href="product-details-slider.html">Product Details Slider</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="wishlist.html">Wishlist</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
-                    <li><a href="compare.html">Compare</a></li>
                   </ul>
                 </li>
 
                 <li class="dropdown-holder">
-                  <a href="blog-rightsidebar.html" class="hodropdown3">Support
+                  <a href="javascript:void(0);"
+                     class="hodropdown3"
+                     v-bind:style="{ color: support_color }">
+                    Support
                     <Icon type="ios-arrow-down" size="16"/>
                   </a>
                   <ul class="hodropdown">
-                    <li><a href="blog-rightsidebar.html">Blog Right Sidebar</a></li>
-                    <li><a href="blog-leftsidebar.html">Blog Left Sidebar</a></li>
-                    <li><a href="blog-details.html">Blog Details</a></li>
-                    <li><a href="blog-details-rightsidebar.html">Blog Details Right Sidebar</a></li>
-                    <li><a href="blog-details-leftsidebar.html">Blog Details Left Sidebar</a></li>
+                    <li v-bind:key="index" v-for="(item, index) in menu_support">
+                      <router-link v-bind:to="item.link">{{ item.title }}</router-link>
+                    </li>
                   </ul>
                 </li>
-                <li>
-                  <a href="about-us.html" class="hodropdown3">About Us
+                <li class="dropdown-holder">
+                  <a href="javascript:void(0);"
+                     class="hodropdown3"
+                     v-bind:style="{ color: about_color }">
+                    About
                     <Icon type="ios-arrow-down" size="16"/>
                   </a>
+                  <ul class="hodropdown">
+                    <li v-bind:key="index" v-for="(item, index) in menu_about">
+                      <router-link v-bind:to="item.link">{{ item.title }}</router-link>
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </nav>
             <!--// Navigation -->
 
           </div>
-          <div class="col-lg-3 col-md-5 col-sm-5" style="margin-left: -60px;">
+          <div class="col-lg-3 col-md-5 col-sm-5" style="margin-left: -10px;">
             <div class="header-contactinfo" v-on:mouseover="mouseover" v-on:mouseout="mouseout">
               <i class="flaticon-support"/>
               <span>Call Us Now:</span>
@@ -92,14 +87,58 @@
 
 <script>
   export default {
+    props: ['isShow', 'products_color', 'support_color', 'about_color'],
     data() {
       return {
         isActive: false,
         scrollTop: 0,
       };
     },
+    created() {
+      if (this.menu_list.length === 0) {
+        this.get_products_list();
+      }
+    },
     mounted() {
-      window.addEventListener('scroll', this.handleScroll)
+      window.addEventListener('scroll', this.handleScroll);
+      this.$router.afterEach((to, from, next) => {
+        window.scrollTo(0, 0)
+      });
+    },
+    watch: {
+      menu_list: function (items) {
+        /**
+         * @param item.product {Object}
+         * @param item.support {Object}
+         * @param item.about {Object}
+        */
+        let product = items.filter(item => item.product);
+        product.forEach(v => {
+          this.$store.commit('change_menu_product', v['product'])
+        });
+        let support = items.filter(item => item.support);
+        support.forEach(v => {
+          this.$store.commit('change_menu_support', v['support'])
+        });
+        let about = items.filter(item => item.about);
+        about.forEach(v => {
+          this.$store.commit('change_menu_about', v['about'])
+        })
+      }
+    },
+    computed: {
+      menu_list: function () {
+        return this.$store.state.menu_list
+      },
+      menu_product: function () {
+          return this.$store.state.menu_product
+      },
+      menu_support: function () {
+          return this.$store.state.menu_support
+      },
+      menu_about: function () {
+          return this.$store.state.menu_about
+      },
     },
     methods: {
       mouseover: function () {
@@ -118,11 +157,26 @@
         // console.log(_this.scrollTop);
         _this.isActive = !!this.scrollTop;
       },
-    }
+      get_products_list: function () {
+         // 获取产品菜单信息
+        this.$axios.get(`${this.$settings.HOST}/nav/menu/`, {}).then(response => {
+          this.$store.commit('change_menu_list', response.data)
+        }).catch(error => {
+          console.log(error.response)
+        })
+      },
+    },
   }
 </script>
 
 <style scoped>
+  .header {
+  width: 100%;
+  min-width: 1201px;
+  position: fixed;
+  z-index: 999;
+  }
+
   .header-white {
     background: hsla(0, 0%, 100%, .9);
   }
@@ -143,6 +197,14 @@
     height: 2px;
     animation: ad_width .3s linear forwards;
     background: #00a7e1;
+  }
+
+  .hodropdown3:hover {
+    color: #00a7e1;
+  }
+
+  .is-blue {
+    color: #00a7e1;
   }
 
   @keyframes ad_width {

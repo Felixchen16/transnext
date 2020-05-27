@@ -24,9 +24,9 @@ import 'view-design/dist/styles/iview.css';
 Vue.use(ViewUI);
 
 // element-ui配置
-// import ElementUI from 'element-ui';
-// import 'element-ui/lib/theme-chalk/index.css';
-// Vue.use(ElementUI);
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
 
 // 导入css初始化样式
 // import '../static/css/reset.css';
@@ -39,9 +39,13 @@ router.beforeEach((to, from, next) => {
   next()
 });
 
+// 使用vuex
+import { store } from "./store/store";
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  store,
   router,
   components: { App },
   template: '<App/>',

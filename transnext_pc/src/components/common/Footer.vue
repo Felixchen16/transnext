@@ -1,242 +1,100 @@
 <template>
   <!-- Footer -->
-  <footer class="footer bg-white">
+  <footer class="footer">
 
     <!-- Footer Top Area -->
-    <div class="footer-toparea">
-      <div class="container">
-        <div class="row">
+    <div v-bind:class="{ 'footer-toparea': isActive }">
+      <div class="footer-row">
 
-          <div class="col-lg-3 col-12">
-            <div class="footer-widget widget-info">
-              <h5 class="footer-widget-title">Contact Info</h5>
-              <p>We are a team of designers & developers that create high quality Magento, Prestashop, Opencart.</p>
-              <ul>
-                <li><i class="ion ion-ios-pin"></i> The Barn, Ullenhall, Henley in Arden B578 5CC, England</li>
-                <li><i class="ion ion-ios-call"></i> Call us: +88.2345.6789</li>
-                <li><i class="ion ion-ios-print"></i> Fax: +(1234) 408 1234</li>
-                <li><i class="ion ion-ios-mail"></i> Email us: <a href="#">info@example.com</a></li>
-              </ul>
-            </div>
+        <div class="col-lg-2 col-md-4">
+          <div class="footer-widget widget-links">
+            <h5 class="footer-widget-title">Products</h5>
+            <ul>
+              <li v-bind:key="index" v-for="(item, index) in menu_product">
+                <router-link :to="item.link">{{ item.title }}</router-link>
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <div class="col-lg-2 col-md-4">
-            <div class="footer-widget widget-links">
-              <h5 class="footer-widget-title">Products</h5>
-              <ul>
-                <li><a href="#">Prices drop</a></li>
-                <li><a href="#">New products</a></li>
-                <li><a href="#">Best sales</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">My account</a></li>
-              </ul>
-            </div>
+        <div class="col-lg-2 col-md-4">
+          <div class="footer-widget widget-links">
+            <h5 class="footer-widget-title">Support</h5>
+            <ul>
+              <li v-bind:key="index" v-for="(item, index) in menu_support">
+                <router-link :to="item.link">{{ item.title }}</router-link>
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <div class="col-lg-2 col-md-4">
-            <div class="footer-widget widget-links">
-              <h5 class="footer-widget-title">Our Company</h5>
-              <ul>
-                <li><a href="#">Delivery</a></li>
-                <li><a href="#">Legal Notice</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Secure payment</a></li>
-                <li><a href="#">Sitemap</a></li>
-                <li><a href="#">Stores</a></li>
-              </ul>
-            </div>
+        <div class="col-lg-2 col-md-4">
+          <div class="footer-widget widget-links">
+            <h5 class="footer-widget-title">About</h5>
+            <ul>
+              <li v-bind:key="index" v-for="(item, index) in menu_about">
+                <router-link :to="item.link">{{ item.title }}</router-link>
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <div class="col-lg-2 col-md-4">
-            <div class="footer-widget widget-links">
-              <h5 class="footer-widget-title">Your Account</h5>
-              <ul>
-                <li><a href="#">Personal info</a></li>
-                <li><a href="#">Orders</a></li>
-                <li><a href="#">Credit slips</a></li>
-                <li><a href="#">Addresses</a></li>
-                <li><a href="#">My wishlists</a></li>
-              </ul>
-            </div>
+        <div class="col-lg-3 col-12">
+          <div class="footer-widget widget-info">
+            <h5 class="footer-widget-title">Contact Us</h5>
+            <ul>
+              <li>
+                <Icon type="ios-phone-portrait"/>
+                +86 (0)15918590138
+              </li>
+              <li>
+                <Icon type="logo-skype"/>
+                15989276058
+              </li>
+              <li>
+                <Icon type="ios-mail-outline"/>
+                info@transnext.com.hk
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <div class="col-lg-3 col-12">
-            <div class="footer-widget widget-customerservice">
-              <div class="info">
-                <h5 class="footer-widget-title">CUSTOMER SERVICE</h5>
-                <h5>SEND AN EMAIL</h5>
-                <h5>HOTLINE: : <a href="#">+88.2345.6789</a></h5>
-                <h6>8:00AM–5.30PM AEST MON–FRI</h6>
-              </div>
-              <div class="payment">
-                <h6>SECURE PAYMENT VIA</h6>
-                <img src="../../../static/images/icons/payment.png" alt="footer payment">
-              </div>
-            </div>
+
+        <div class="footer-widget widget-customerservice">
+          <div class="info">
+            <h5 class="footer-widget-title" style="color: #000000">Please leave us a message, and we will reply to you
+              as soon as
+              possible.</h5>
+            <Form ref="formValidate" :model="formValidate" :rules="ruleValidate" :label-width="80">
+              <FormItem label="Name" prop="name">
+                <Input v-model="formValidate.name" placeholder="Enter your name"/>
+              </FormItem>
+              <FormItem label="E-mail" prop="mail">
+                <Input v-model="formValidate.mail" placeholder="Enter your e-mail"/>
+              </FormItem>
+              <FormItem label="Message" prop="msg">
+                <Input v-model="formValidate.msg" type="textarea" :autosize="{minRows: 2,maxRows: 8}"
+                       placeholder="Enter your message" style="width: 200px"/>
+              </FormItem>
+              <FormItem>
+                <Button type="primary" @click="handleSubmit('formValidate')" style="width: 100px">Submit</Button>
+                <Button @click="handleReset('formValidate')" style="margin-left: 8px; width: 100px">Reset</Button>
+              </FormItem>
+            </Form>
           </div>
         </div>
       </div>
+
     </div>
     <!--// Footer Top Area -->
 
     <!-- Footer Bottom -->
-    <div class="footer-bottomarea">
-      <div class="container">
-        <div class="footer-copyright">
-          <p class="copyright">Copyright &copy; <a href="http://www.bootstrapmb.com/" title="bootstrapmb">Haltico</a> .
-            All Rights Reserved</p>
-        </div>
+    <div v-bind:class="{ 'footer-bottomarea': isActive }">
+      <div class="footer-copyright">
+        <p class="copyright">Copyright &copy; {{ year }} TransNext Technology (Ch) Ltd</p>
       </div>
     </div>
     <!--// Footer Bottom -->
-
-    <!-- Quickview Modal -->
-    <div class="quickmodal">
-      <div class="body-overlay"></div>
-      <button class="quickmodal-close"><i class="ion ion-ios-close"></i></button>
-      <div class="quickmodal-inside">
-        <div class="container">
-          <div class="pdetails">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="pdetails-images">
-                  <div class="pdetails-largeimages">
-                    <div class="pdetails-singleimage">
-                      <img src="../../../static/images/product/lg/product-image-1.jpg" alt="product image">
-                    </div>
-                    <div class="pdetails-singleimage">
-                      <img src="../../../static/images/product/lg/product-image-2.jpg" alt="product image">
-                    </div>
-                    <div class="pdetails-singleimage">
-                      <img src="../../../static/images/product/lg/product-image-3.jpg" alt="product image">
-                    </div>
-                    <div class="pdetails-singleimage">
-                      <img src="../../../static/images/product/lg/product-image-4.jpg" alt="product image">
-                    </div>
-                    <div class="pdetails-singleimage">
-                      <img src="../../../static/images/product/lg/product-image-1.jpg" alt="product image">
-                    </div>
-                    <div class="pdetails-singleimage">
-                      <img src="../../../static/images/product/lg/product-image-2.jpg" alt="product image">
-                    </div>
-                    <div class="pdetails-singleimage">
-                      <img src="../../../static/images/product/lg/product-image-3.jpg" alt="product image">
-                    </div>
-                    <div class="pdetails-singleimage">
-                      <img src="../../../static/images/product/lg/product-image-4.jpg" alt="product image">
-                    </div>
-                  </div>
-
-                  <div class="pdetails-thumbs">
-                    <div class="pdetails-singlethumb">
-                      <img src="../../../static/images/product/thumbnail/product-image-1.jpg" alt="product thumb">
-                    </div>
-                    <div class="pdetails-singlethumb">
-                      <img src="../../../static/images/product/thumbnail/product-image-2.jpg" alt="product thumb">
-                    </div>
-                    <div class="pdetails-singlethumb">
-                      <img src="../../../static/images/product/thumbnail/product-image-3.jpg" alt="product thumb">
-                    </div>
-                    <div class="pdetails-singlethumb">
-                      <img src="../../../static/images/product/thumbnail/product-image-4.jpg" alt="product thumb">
-                    </div>
-                    <div class="pdetails-singlethumb">
-                      <img src="../../../static/images/product/thumbnail/product-image-1.jpg" alt="product thumb">
-                    </div>
-                    <div class="pdetails-singlethumb">
-                      <img src="../../../static/images/product/thumbnail/product-image-2.jpg" alt="product thumb">
-                    </div>
-                    <div class="pdetails-singlethumb">
-                      <img src="../../../static/images/product/thumbnail/product-image-3.jpg" alt="product thumb">
-                    </div>
-                    <div class="pdetails-singlethumb">
-                      <img src="../../../static/images/product/thumbnail/product-image-4.jpg" alt="product thumb">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="pdetails-content">
-
-                  <div class="rattingbox">
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                    <span class="active"><i class="ion ion-ios-star"></i></span>
-                  </div>
-                  <h3>SonicFuel Wireless Over-Ear Headphones</h3>
-                  <div class="pdetails-pricebox">
-                    <del class="oldprice">$35.90</del>
-                    <span class="price">$34.11</span>
-                    <span class="badge">Save 5%</span>
-                  </div>
-                  <p>The ATH-S700BT offers clear, full-bodied audio reproduction with Bluetooth®
-                    wireless operation. The headphones are equipped with a mic, and music and
-                    volume controls, allowing you to easily answer calls..</p>
-                  <div class="pdetails-quantity">
-                    <div class="quantity-select">
-                      <input type="text" value="1">
-                      <div class="inc qtybutton">+<i class="ion ion-ios-arrow-up"></i></div>
-                      <div class="dec qtybutton">-<i class="ion ion-ios-arrow-down"></i></div>
-                    </div>
-                    <a href="shop-rightsidebar.html" class="ho-button">
-                      <i class="lnr lnr-cart"></i>
-                      <span>Add to cart</span>
-                    </a>
-                  </div>
-                  <div class="pdetails-color">
-                    <span>Color :</span>
-                    <ul>
-                      <li class="red"><span></span></li>
-                      <li class="green checked"><span></span></li>
-                      <li class="blue"><span></span></li>
-                      <li class="black"><span></span></li>
-                    </ul>
-                  </div>
-                  <div class="pdetails-size">
-                    <span>Size :</span>
-                    <ul>
-                      <li class="checked"><span>S</span></li>
-                      <li><span>M</span></li>
-                      <li><span>L</span></li>
-                      <li><span>XL</span></li>
-                      <li><span>XXL</span></li>
-                    </ul>
-                  </div>
-                  <div class="pdetails-categories">
-                    <span>Categories :</span>
-                    <ul>
-                      <li><a href="shop-rightsidebar.html">Accessories</a></li>
-                      <li><a href="shop-rightsidebar.html">Kids</a></li>
-                      <li><a href="shop-rightsidebar.html">Women</a></li>
-                    </ul>
-                  </div>
-                  <div class="pdetails-tags">
-                    <span>Tags :</span>
-                    <ul>
-                      <li><a href="shop-rightsidebar.html">Electronic</a></li>
-                      <li><a href="shop-rightsidebar.html">Television</a></li>
-                    </ul>
-                  </div>
-                  <div class="pdetails-socialshare">
-                    <span>Share :</span>
-                    <ul>
-                      <li><a href="#"><i class="ion ion-logo-facebook"></i></a></li>
-                      <li><a href="#"><i class="ion ion-logo-twitter"></i></a></li>
-                      <li><a href="#"><i class="ion ion-logo-googleplus"></i></a></li>
-                      <li><a href="#"><i class="ion ion-logo-pinterest"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--// Quickview Modal -->
 
   </footer>
   <!--// Footer -->
@@ -244,13 +102,87 @@
 
 <script>
   export default {
-    data() {
-      return {};
+    props: {
+      isActive: {
+        type: Boolean,
+        default: true
+      }
     },
-    methods: {}
+    data() {
+      return {
+        formValidate: {
+          name: '',
+          mail: '',
+          msg: ''
+        },
+        ruleValidate: {
+          name: [
+            {required: true, message: 'The name cannot be empty', trigger: 'blur'}
+          ],
+          mail: [
+            {required: true, message: 'Mailbox cannot be empty', trigger: 'blur'},
+            {type: 'email', message: 'Incorrect email format', trigger: 'blur'}
+          ],
+          msg: [
+            {required: true, message: 'Message cannot be empty', trigger: 'blur'}
+          ],
+        },
+        year: new Date().getFullYear(),
+      };
+    },
+    computed: {
+      menu_product: function () {
+        return this.$store.state.menu_product
+      },
+      menu_support: function () {
+        return this.$store.state.menu_support
+      },
+      menu_about: function () {
+        return this.$store.state.menu_about
+      },
+    },
+    methods: {
+      handleSubmit(name) {
+        this.$refs[name].validate((valid) => {
+          if (valid) {
+            this.$axios.post(
+              `${this.$settings.HOST}/message/`,
+              {name:this.formValidate.name, email:this.formValidate.mail, msg:this.formValidate.msg}
+            ).then(() => {
+              this.$Message.success('Send messages success!');
+            }).catch(error => {
+              this.$Message.error(error.response)
+            });
+            this.$refs[name].resetFields();
+          } else {
+            this.$Message.error('Send messages fail!');
+          }
+        })
+      },
+      handleReset(name) {
+        this.$refs[name].resetFields();
+      }
+    }
   }
 </script>
 
 <style scoped>
+  .footer-toparea {
+    background: #F1F1F1;
+  }
 
+  .footer-bottomarea {
+    background: #F1F1F1;
+  }
+
+  .footer-row {
+    display: table;
+    width: 100%;
+    max-width: 1200px;
+    margin: 1.5em auto 0;
+  }
+
+  .footer-row div {
+    float: left;
+  }
 </style>
