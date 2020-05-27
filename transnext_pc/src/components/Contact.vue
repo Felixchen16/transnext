@@ -2,7 +2,7 @@
   <div>
     <Header v-bind:about_color="about_color" v-bind:isShow="true"/>
     <div class="about">
-      <div style="background: url('../../static/images/about/Contactus.jpg') center bottom no-repeat;height: 400px;"></div>
+      <div style="background: url('./static/images/about/Contactus.jpg') center bottom no-repeat;height: 400px;"></div>
       <div class="container" style="padding-top: 30px" v-html="profile.context"></div>
     </div>
     <Footer/>

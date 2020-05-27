@@ -2,7 +2,7 @@
   <div>
     <Header v-bind:support_color="support_color" v-bind:isShow="true"/>
     <div class="support">
-      <div style="background: url('../../static/images/support/4.jpg') center bottom no-repeat;height: 400px;"></div>
+      <div style="background: url('./static/images/support/4.jpg') center bottom no-repeat;height: 400px;"></div>
       <div class="containers">
         <ul class="hdlist" style="clear: both; padding-left: 0;">
           <li v-bind:key="index" v-for="(item, index) in blog_list">
