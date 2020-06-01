@@ -63,110 +63,110 @@
             <div class="right">
               <div>
                 <h1 class="title">{{ productInfo.title }}</h1>
-<!--                <div class="description">{{description}}</div>-->
+                <!--                <div class="description">{{description}}</div>-->
               </div>
-<!--              <div class="Reviews">-->
-<!--                <img class="Reviews-img" src="../../static/img/a.png" alt="">-->
-<!--                <a class="Reviews-a">-->
-<!--                  <div class="Reviews-d">-->
-<!--                                <span class="stars">-->
-<!--                                    <span>-->
-<!--                                        <i class="iconfont fa fa-star-o"></i>-->
-<!--                                        <i class="iconfont fa fa-star-o"></i>-->
-<!--                                        <i class="iconfont fa fa-star-o"></i>-->
-<!--                                        <i class="iconfont fa fa-star-o"></i>-->
-<!--                                        <i class="iconfont fa fa-star-o"></i>-->
-<!--                                    </span>-->
-<!--                                    <span class="mask" v-bind:style="{ width: getstarWidth() }">-->
-<!--                                        <i class="iconfont fa fa-star"></i>-->
-<!--                                        <i class="iconfont fa fa-star"></i>-->
-<!--                                        <i class="iconfont fa fa-star"></i>-->
-<!--                                        <i class="iconfont fa fa-star"></i>-->
-<!--                                        <i class="iconfont fa fa-star"></i>-->
-<!--                                    </span>-->
-<!--                                </span>-->
-<!--                  </div>-->
-<!--                  <span style="margin-left: 16px; ">{{Reviews}} ({{ReviewsNum}} Reviews)</span>-->
-<!--                </a>-->
-<!--              </div>-->
-<!--              <div class="Reviews" style="margin-top: 8px;">-->
-<!--                <div class="Review-title">A</div>-->
-<!--                <a class="Reviews-a">-->
-<!--                  <div class="Reviews-d">-->
-<!--                                <span class="stars">-->
-<!--                                    <span>-->
-<!--                                        <i class="iconfont2 fa fa-star"></i>-->
-<!--                                        <i class="iconfont2 fa fa-star"></i>-->
-<!--                                        <i class="iconfont2 fa fa-star"></i>-->
-<!--                                        <i class="iconfont2 fa fa-star"></i>-->
-<!--                                        <i class="iconfont2 fa fa-star"></i>-->
-<!--                                    </span>-->
-<!--                                    <span class="mask" v-bind:style="{ width: getstarWidth2() }">-->
-<!--                                        <i class="iconfont3 fa fa-star"></i>-->
-<!--                                        <i class="iconfont3 fa fa-star"></i>-->
-<!--                                        <i class="iconfont3 fa fa-star"></i>-->
-<!--                                        <i class="iconfont3 fa fa-star"></i>-->
-<!--                                        <i class="iconfont3 fa fa-star"></i>-->
-<!--                                    </span>-->
-<!--                                </span>-->
-<!--                  </div>-->
-<!--                  <span class="Review-num"-->
-<!--                        style="color: #00a7e1;margin-left: 16px;margin-right: 16px; ">({{ReviewsA}})</span>-->
-<!--                  <a class="Review-a-btn">Write a review</a>-->
-<!--                </a>-->
-<!--              </div>-->
+              <!--              <div class="Reviews">-->
+              <!--                <img class="Reviews-img" src="../../static/img/a.png" alt="">-->
+              <!--                <a class="Reviews-a">-->
+              <!--                  <div class="Reviews-d">-->
+              <!--                                <span class="stars">-->
+              <!--                                    <span>-->
+              <!--                                        <i class="iconfont fa fa-star-o"></i>-->
+              <!--                                        <i class="iconfont fa fa-star-o"></i>-->
+              <!--                                        <i class="iconfont fa fa-star-o"></i>-->
+              <!--                                        <i class="iconfont fa fa-star-o"></i>-->
+              <!--                                        <i class="iconfont fa fa-star-o"></i>-->
+              <!--                                    </span>-->
+              <!--                                    <span class="mask" v-bind:style="{ width: getstarWidth() }">-->
+              <!--                                        <i class="iconfont fa fa-star"></i>-->
+              <!--                                        <i class="iconfont fa fa-star"></i>-->
+              <!--                                        <i class="iconfont fa fa-star"></i>-->
+              <!--                                        <i class="iconfont fa fa-star"></i>-->
+              <!--                                        <i class="iconfont fa fa-star"></i>-->
+              <!--                                    </span>-->
+              <!--                                </span>-->
+              <!--                  </div>-->
+              <!--                  <span style="margin-left: 16px; ">{{Reviews}} ({{ReviewsNum}} Reviews)</span>-->
+              <!--                </a>-->
+              <!--              </div>-->
+              <!--              <div class="Reviews" style="margin-top: 8px;">-->
+              <!--                <div class="Review-title">A</div>-->
+              <!--                <a class="Reviews-a">-->
+              <!--                  <div class="Reviews-d">-->
+              <!--                                <span class="stars">-->
+              <!--                                    <span>-->
+              <!--                                        <i class="iconfont2 fa fa-star"></i>-->
+              <!--                                        <i class="iconfont2 fa fa-star"></i>-->
+              <!--                                        <i class="iconfont2 fa fa-star"></i>-->
+              <!--                                        <i class="iconfont2 fa fa-star"></i>-->
+              <!--                                        <i class="iconfont2 fa fa-star"></i>-->
+              <!--                                    </span>-->
+              <!--                                    <span class="mask" v-bind:style="{ width: getstarWidth2() }">-->
+              <!--                                        <i class="iconfont3 fa fa-star"></i>-->
+              <!--                                        <i class="iconfont3 fa fa-star"></i>-->
+              <!--                                        <i class="iconfont3 fa fa-star"></i>-->
+              <!--                                        <i class="iconfont3 fa fa-star"></i>-->
+              <!--                                        <i class="iconfont3 fa fa-star"></i>-->
+              <!--                                    </span>-->
+              <!--                                </span>-->
+              <!--                  </div>-->
+              <!--                  <span class="Review-num"-->
+              <!--                        style="color: #00a7e1;margin-left: 16px;margin-right: 16px; ">({{ReviewsA}})</span>-->
+              <!--                  <a class="Review-a-btn">Write a review</a>-->
+              <!--                </a>-->
+              <!--              </div>-->
               <div class="ul-warp" v-html="productInfo.specs">
-<!--                  {{ productInfo.specs }}-->
-<!--                  <li v-for="(item, index) in desList" :key="index">{{item}}</li>-->
+                <!--                  {{ productInfo.specs }}-->
+                <!--                  <li v-for="(item, index) in desList" :key="index">{{item}}</li>-->
               </div>
-<!--              <div class="price-warp">-->
-<!--                        <span>-->
-<!--                            <b>${{price1}}</b>-->
-<!--                            <i>.</i>-->
-<!--                            <b style="font-size: 1.33rem;vertical-align: 0;">{{price2}}</b>-->
-<!--                        </span>-->
-<!--              </div>-->
-<!--              <div class="color-warp">-->
-<!--                <div class="color-name">-->
-<!--                  <span>Color:</span>-->
-<!--                  Black-->
-<!--                </div>-->
-<!--                <div class="color-color">-->
-<!--                  <a class="color-btn">-->
-<!--                    <img title="Black" src="../../static/img/black.png">-->
-<!--                  </a>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div style="font-size: 14px;">-->
-<!--                <div class="quantity-warp">-->
-<!--                  <div class="quantity-name">Quantity:</div>-->
-<!--                  <div class="quantity-input-warp">-->
-<!--                    <div class="quantity-input">-->
-<!--                      <a role="button" v-bind:class="{ bAble: isBAble('minus'), bDisable: !isBAble('minus') }"-->
-<!--                         v-on:click="minusQuantity">-->
-<!--                        <i class="fa fa-minus"/>-->
-<!--                      </a>-->
-<!--                      <input autocomplete="off" type="text" v-model="Quantity">-->
-<!--                      <a role="button" v-bind:class="{ bAble: isBAble(), bDisable: !isBAble() }"-->
-<!--                         v-on:click="addQuantity">-->
-<!--                        <i class="fa fa-plus"/>-->
-<!--                      </a>-->
-<!--                    </div>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--                <div class="buy-btn-warp">-->
-<!--                  <a role="button" tabindex="0" class="button-normal alpha">ADD TO CART</a>-->
-<!--                  <a role="button" tabindex="0" class="button-normal submit">BUY NOW</a>-->
-<!--                </div>-->
-<!--                <div class="buy-des">Please allow 3-5 business days for shipping</div>-->
-<!--              </div>-->
+              <!--              <div class="price-warp">-->
+              <!--                        <span>-->
+              <!--                            <b>${{price1}}</b>-->
+              <!--                            <i>.</i>-->
+              <!--                            <b style="font-size: 1.33rem;vertical-align: 0;">{{price2}}</b>-->
+              <!--                        </span>-->
+              <!--              </div>-->
+              <!--              <div class="color-warp">-->
+              <!--                <div class="color-name">-->
+              <!--                  <span>Color:</span>-->
+              <!--                  Black-->
+              <!--                </div>-->
+              <!--                <div class="color-color">-->
+              <!--                  <a class="color-btn">-->
+              <!--                    <img title="Black" src="../../static/img/black.png">-->
+              <!--                  </a>-->
+              <!--                </div>-->
+              <!--              </div>-->
+              <!--              <div style="font-size: 14px;">-->
+              <!--                <div class="quantity-warp">-->
+              <!--                  <div class="quantity-name">Quantity:</div>-->
+              <!--                  <div class="quantity-input-warp">-->
+              <!--                    <div class="quantity-input">-->
+              <!--                      <a role="button" v-bind:class="{ bAble: isBAble('minus'), bDisable: !isBAble('minus') }"-->
+              <!--                         v-on:click="minusQuantity">-->
+              <!--                        <i class="fa fa-minus"/>-->
+              <!--                      </a>-->
+              <!--                      <input autocomplete="off" type="text" v-model="Quantity">-->
+              <!--                      <a role="button" v-bind:class="{ bAble: isBAble(), bDisable: !isBAble() }"-->
+              <!--                         v-on:click="addQuantity">-->
+              <!--                        <i class="fa fa-plus"/>-->
+              <!--                      </a>-->
+              <!--                    </div>-->
+              <!--                  </div>-->
+              <!--                </div>-->
+              <!--                <div class="buy-btn-warp">-->
+              <!--                  <a role="button" tabindex="0" class="button-normal alpha">ADD TO CART</a>-->
+              <!--                  <a role="button" tabindex="0" class="button-normal submit">BUY NOW</a>-->
+              <!--                </div>-->
+              <!--                <div class="buy-des">Please allow 3-5 business days for shipping</div>-->
+              <!--              </div>-->
             </div>
           </div>
         </div>
 
-<!--        <div class="wrap">-->
+        <!--        <div class="wrap">-->
 
-<!--        </div>-->
+        <!--        </div>-->
 
         <div class="img-p-warp" v-bind:class="{ active: showBigImg  }">
           <div class="img-p-warp-mask">
@@ -179,14 +179,13 @@
                   d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
               </g>
             </svg>
-            <svg v-on:click="leftImg2" class="jss1" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
-                 style="position: absolute; left: 0px; z-index: 1; color: rgb(255, 255, 255); cursor: pointer; font-size: 50px;">
+            <svg v-on:click="leftImg2" class="jss1 qhjt_left" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
               <g>
                 <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
               </g>
             </svg>
-            <svg v-on:click="rightImg2" class="jss1" focusable="false" viewBox="0 0 24 24" aria-hidden="true"
-                 style="position: absolute; right: 0px; z-index: 1; color: rgb(255, 255, 255); cursor: pointer; font-size: 50px;">
+            <svg v-on:click="rightImg2" class="jss1 qhjt_right" focusable="false" viewBox="0 0 24 24"
+                 aria-hidden="true">
               <g>
                 <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
               </g>
@@ -197,7 +196,7 @@
         </div>
       </div>
     </div>
-    <div class="container" v-html="productInfo.context">
+    <div class="container" v-html="productInfo.context" style="padding-top: 10px;">
 
     </div>
 
@@ -232,19 +231,9 @@
         },
         imglist: [],
 
-        title: 'PowerExpand+',
-        subTitle: 'USB C to HDMI Adapter',
-        description: 'Aluminum Portable USB C Adapter, Supports 4K 60Hz, for MacBook Pro, MacBook Air, iPad Pro, Pixelbook, XPS, Galaxy, and More',
         Reviews: 4.6,
         ReviewsNum: 178,
         ReviewsA: 0,
-        desList: [
-          'The Anker advantage: Join the 50 million+ powered by our leading technology.',
-          'Vivid video: the HDMI adapter lets you connect to any TV or display with an HDMI port to stream video in up to 4K resolution.',
-          "Plug and play: instantly turn your laptop or phone's USB-C port into an HDMI port, with No installation necessary.",
-          'Premium construction: a lightweight aluminum casing allows for greater heat dissipation, while the reinforced braided-nylon cable is designed to withstand the twists and tugs of daily use.',
-        ],
-        price: '14.99',
         Quantity: 1
       };
     },
@@ -254,19 +243,9 @@
     },
     created() {
       this.get_product();
-      // window.document.title = 'TransNext | ' + this.productInfo.title
-
-    },
-    computed: {
-      price1: function () {
-        return this.price.split('.')[0]
-      },
-      price2: function () {
-        return this.price.split('.')[1]
-      }
     },
     methods: {
-      get_product: function() {
+      get_product: function () {
         // 获取产品信息
         this.$axios.get(`${this.$settings.HOST}/products/`, {
           params: {
@@ -510,42 +489,6 @@
     float: right;
   }
 
-  /*html, html body {*/
-  /*  font-size: 12px;*/
-  /*}*/
-
-  /*html a {*/
-  /*  text-decoration: none;*/
-  /*  cursor: pointer;*/
-  /*  color: #323232;*/
-  /*}*/
-
-  /*body {*/
-  /*  margin: 0px;*/
-  /*  padding: 0px;*/
-  /*  -webkit-font-smoothing: antialiased;*/
-  /*  -moz-osx-font-smoothing: grayscale;*/
-  /*  font-family: Whitney, Helvetica, Arial, "sans-serif";*/
-  /*  color: #323232;*/
-  /*  line-height: 1.5;*/
-  /*  background-color: #f9f9f9;*/
-  /*}*/
-
-  /*div {*/
-  /*  -webkit-box-sizing: border-box;*/
-  /*  box-sizing: border-box;*/
-  /*}*/
-
-  /*b, strong {*/
-  /*  font-weight: inherit;*/
-  /*  font-weight: bolder;*/
-  /*}*/
-
-  /*img {*/
-  /*  vertical-align: middle;*/
-  /*  border-style: none;*/
-  /*}*/
-
   .wrap {
     position: relative;
     -webkit-box-sizing: border-box;
@@ -612,7 +555,6 @@
     height: 520px;
     cursor: -webkit-zoom-in;
   }
-
 
   .image-gallery-left-nav, .image-gallery-right-nav {
 
@@ -1073,5 +1015,69 @@
     transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     user-select: none;
     flex-shrink: 0;
+  }
+
+  .qhjt_left {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 50px;
+  }
+
+  .qhjt_right {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 50px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .product-detail {
+      padding-top: 0;
+      padding-bottom: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      line-height: 24px;
+      color: #888;
+      background-color: #f2f2f2;
+      overflow-x: hidden;
+    }
+
+    .banner .left, .banner .right {
+      position: relative;
+      width: 100%;
+      display: inline;
+      vertical-align: top;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .big-img[data-v-78718c00] {
+      width: 100%;
+      height: auto;
+      cursor: -webkit-zoom-in;
+    }
+
+    .qhjt_left {
+      position: absolute;
+      left: 0;
+      z-index: 1;
+      color: #01c6fb;
+      cursor: pointer;
+      font-size: 50px;
+    }
+
+    .qhjt_right {
+      position: absolute;
+      right: 0;
+      z-index: 1;
+      color: #01c6fb;
+      cursor: pointer;
+      font-size: 50px;
+    }
   }
 </style>

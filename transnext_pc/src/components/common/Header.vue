@@ -6,9 +6,9 @@
       <div class="container">
         <div class="row align-items-center">
 
-            <a href="/">
-              <img src="../../../static/images/logo/logo_new.png" style="width: 200px; height: 60px;" alt="TransNext">
-            </a>
+          <a href="/" class="alink">
+            <img class="headerimg" src="../../../static/images/logo/logo_new.png" alt="TransNext">
+          </a>
 
           <div class="col-lg-7 col-md-5 col-sm-5">
             <!-- Navigation -->
@@ -17,6 +17,7 @@
                 <li class="dropdown-holder ">
                   <router-link to="/" class="hodropdown3">Home</router-link>
                 </li>
+
                 <li class="dropdown-holder">
                   <a href="javascript:void(0);"
                      class="hodropdown3"
@@ -49,6 +50,7 @@
                     </li>
                   </ul>
                 </li>
+
                 <li class="dropdown-holder">
                   <a href="javascript:void(0);"
                      class="hodropdown3"
@@ -67,15 +69,65 @@
             <!--// Navigation -->
 
           </div>
-          <div class="col-lg-3 col-md-5 col-sm-5" style="margin-left: -10px;">
-            <div class="header-contactinfo" v-on:mouseover="mouseover" v-on:mouseout="mouseout">
-              <i class="flaticon-support"/>
-              <span>Call Us Now:</span>
-              <span>Skype: 15989276058</span>
-            </div>
+          <div class="header-contactinfo">
+            <i class="flaticon-support"/>
+            <span>Call Us Now:</span>
+            <span>Skype: 15989276058</span>
           </div>
-          <div class="col-12 d-block d-lg-none">
-            <div class="mobile-menu clearfix"></div>
+          <div class="col-3 d-block d-lg-none">
+            <div class="mobile-menu clearfix" style="margin-top: -80%;">
+              <Icon type="ios-menu" @click="value2 = true" size="35"/>
+              <!--              <Button icon="md-menu" @click="value2 = true"/>-->
+              <Drawer title="TransNext" placement="left" v-model="value2">
+                <Col span="8">
+                  <Menu :theme="theme2" accordion>
+                    <Submenu name="1">
+                      <template slot="title">
+                        Products
+                      </template>
+                      <MenuItem v-bind:key="index" v-for="(item, index) in menu_product"
+                                v-bind:name="'1'+ '-' + index"
+                                v-bind:to="'/categroy/' + item.id + item.link">{{ item.title }}
+                      </MenuItem>
+
+                    </Submenu>
+                    <Submenu name="2">
+                      <template slot="title">
+                        Support
+                      </template>
+                      <MenuItem v-bind:key="index" v-for="(item, index) in menu_support"
+                                v-bind:name="'2'+ '-' + index"
+                                v-bind:to="item.link">{{ item.title }}
+                      </MenuItem>
+                    </Submenu>
+                    <Submenu name="3">
+                      <template slot="title">
+                        About
+                      </template>
+                      <MenuItem v-bind:key="index" v-for="(item, index) in menu_about"
+                                v-bind:name="'3'+ '-' + index"
+                                v-bind:to="item.link">{{ item.title }}
+                      </MenuItem>
+                    </Submenu>
+
+                    <p :style="pStyle">Call Us Now:</p>
+                    <div class="demo-drawer-profile">
+                      <Row>
+                        <Col span="20">
+                          Email: &nbsp;info@transnext.com.hk
+                        </Col>
+                      </Row>
+                      <Row>
+                        <Col span="20">
+                          Skype: 15989276058
+                        </Col>
+                      </Row>
+                    </div>
+
+                  </Menu>
+                </Col>
+              </Drawer>
+            </div>
           </div>
         </div>
       </div>
@@ -92,6 +144,16 @@
       return {
         isActive: false,
         scrollTop: 0,
+        value2: false,
+        theme2: 'light',
+        pStyle: {
+          fontSize: '16px',
+          color: 'rgba(0,0,0,0.85)',
+          lineHeight: '24px',
+          display: 'block',
+          marginBottom: '16px',
+          marginTop: '30%'
+        },
       };
     },
     created() {
@@ -111,7 +173,7 @@
          * @param item.product {Object}
          * @param item.support {Object}
          * @param item.about {Object}
-        */
+         */
         let product = items.filter(item => item.product);
         product.forEach(v => {
           this.$store.commit('change_menu_product', v['product'])
@@ -131,13 +193,13 @@
         return this.$store.state.menu_list
       },
       menu_product: function () {
-          return this.$store.state.menu_product
+        return this.$store.state.menu_product
       },
       menu_support: function () {
-          return this.$store.state.menu_support
+        return this.$store.state.menu_support
       },
       menu_about: function () {
-          return this.$store.state.menu_about
+        return this.$store.state.menu_about
       },
     },
     methods: {
@@ -158,7 +220,7 @@
         _this.isActive = !!this.scrollTop;
       },
       get_products_list: function () {
-         // 获取产品菜单信息
+        // 获取产品菜单信息
         this.$axios.get(`${this.$settings.HOST}/nav/menu/`, {}).then(response => {
           this.$store.commit('change_menu_list', response.data)
         }).catch(error => {
@@ -171,10 +233,14 @@
 
 <style scoped>
   .header {
-  width: 100%;
-  min-width: 1201px;
-  position: fixed;
-  z-index: 999;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+
+  .headerimg {
+    width: 200px;
+    height: 60px;
   }
 
   .header-white {
@@ -229,4 +295,60 @@
     color: #454545
   }
 
+  @media only screen and (max-width: 767px) {
+    .header {
+      width: 100%;
+      position: static;
+      z-index: 999;
+    }
+
+    .headerimg {
+      width: 100%;
+      height: auto;
+    }
+
+    .ho-navigation > ul > li {
+      display: block;
+      font-size: 14px;
+      position: relative;
+    }
+
+    .header-contactinfo {
+      display: none;
+    }
+
+    .ho-navigation-2 {
+      display: none;
+    }
+
+    .ho-navigation > ul > li .hodropdown {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background: #fff;
+      width: 100%;
+      box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+      border-bottom: 3px solid #0B88EE;
+      padding: 10px 0;
+      -webkit-transition: all .3s ease-in-out 0s;
+      -o-transition: all .3s ease-in-out 0s;
+      transition: all .3s ease-in-out 0s;
+    }
+
+    .header-contactinfo a, .header-contactinfo span, .header-contactinfo i, .ho-navigation-2 ul li a, .ho-navigation-3 ul li a {
+      color: #454545;
+    }
+
+    .demo-drawer-profile {
+      font-size: 14px;
+    }
+
+    .demo-drawer-profile .ivu-col {
+      margin-bottom: 12px;
+    }
+
+    .alink {
+      margin-left: 25%;
+    }
+  }
 </style>

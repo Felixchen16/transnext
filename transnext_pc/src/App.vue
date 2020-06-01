@@ -6,33 +6,26 @@
 
   <div id="app">
     <div id="wrapper" class="wrapper">
-<!--      <Header/>-->
       <router-view/>
-<!--      <Footer/>-->
+      <vueToTop type="9" size="40" color="#00a7e1"/>
     </div>
   </div>
 </template>
 
 <script>
-  // import Header from "./components/common/Header"
-  // import Footer from "./components/common/Footer"
+
 
   export default {
     name: 'App',
-    components: {
-      // Header,
-      // Footer,
-    },
-    methods: {},
   }
 </script>
 
-<style>
+<!--<style>-->
   /*@import url("http://www.transnext.com:8080/static/css/plugins.css");*/
   /*@import url('http://www.transnext.com:8080/static/css/custom.css');*/
   /*@import url("http://www.transnext.com:8080/static/css/style.css");*/
   /*@import url('http://cdn.bootstrapmb.com/bootstrap/3.3.7/css/bootstrap.min.css');*/
-</style>
+<!--</style>-->
 <style>
 .checkout-info,pre {
 	word-wrap: break-word
@@ -467,7 +460,6 @@ input,select,textarea {
 }
 
 button,input[type=email],input[type=number],input[type=password],input[type=text],select {
-	line-height: 48px;
   width: 200px;
 }
 
@@ -1672,7 +1664,9 @@ blockquote {
 
 @media only screen and (max-width:575px) {
 	.container {
-		max-width: 380px
+		max-width: 380px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 	}
 
 	.section-title .nav {
@@ -5004,7 +4998,8 @@ blockquote {
 .header-contactinfo {
 	position: relative;
 	padding-left: 48px;
-	color: #fff
+	color: #fff;
+  margin-left: auto;
 }
 
 .header-contactinfo i {
@@ -5061,16 +5056,6 @@ blockquote {
 }
 
 @media only screen and (min-width:768px) and (max-width:991px) {
-	.header-searchbox {
-		margin-top: 30px
-	}
-
-	.header-bottom {
-		padding-top: 15px
-	}
-}
-
-@media only screen and (max-width:767px) {
 	.header-searchbox {
 		margin-top: 30px
 	}
@@ -5159,10 +5144,6 @@ blockquote {
 	.header-2 .header-catmenu .catmenu-body,.header-2 .header-catmenu .catmenu-trigger {
 		width: 100%
 	}
-}
-
-.mobile-menu {
-	margin-top: -42px
 }
 
 .mobile-menu .mean-bar {

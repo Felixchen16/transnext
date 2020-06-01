@@ -2,7 +2,7 @@
   <div>
     <Header v-bind:support_color="support_color" v-bind:isShow="true"/>
     <div class="support">
-      <div style="background: url('./static/images/support/4.jpg') center bottom no-repeat;height: 400px;"></div>
+      <div style="background: url('/images/support/4.jpg') center bottom no-repeat;height: 400px;"></div>
       <div class="container" style="padding-top: 30px">
         <div class="new_title">{{ blog.title }}</div>
         <div class="new_share"></div>
@@ -74,5 +74,25 @@
     border-bottom: 1px dashed #CCC;
     color: #999999;
     padding-left: 10px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .support {
+      padding-top: 0;
+      padding-bottom: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      line-height: 24px;
+      overflow-x: hidden;
+    }
+
+    .new_title {
+      height: 80px;
+      line-height: normal;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #000000;
+    }
   }
 </style>

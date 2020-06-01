@@ -55,4 +55,4 @@ class BlogModelSerializer(serializers.ModelSerializer):
     # 模型序列化器字段声明
     class Meta:
         model = Blog
-        fields = ["id", "title", "context", "img", "remark", "created_time"]
+        fields = ["id", "title", "context", "img", "remark", "time"]

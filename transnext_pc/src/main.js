@@ -5,7 +5,9 @@ import App from './App';
 import router from './router';
 import settings from "./settings";
 import axios from "axios";
-import $ from 'jquery'
+import vueToTop from 'vue-totop'
+Vue.use(vueToTop);
+// import $ from 'jquery'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min'
 
@@ -24,9 +26,9 @@ import 'view-design/dist/styles/iview.css';
 Vue.use(ViewUI);
 
 // element-ui配置
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-Vue.use(ElementUI);
+// import ElementUI from 'element-ui';
+// import 'element-ui/lib/theme-chalk/index.css';
+// Vue.use(ElementUI);
 
 // 导入css初始化样式
 // import '../static/css/reset.css';

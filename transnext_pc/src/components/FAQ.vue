@@ -2,7 +2,7 @@
   <div>
     <Header v-bind:support_color="support_color" v-bind:isShow="true"/>
     <div class="support">
-      <div style="background: url('./static/images/support/FAQ.jpg') center bottom no-repeat;height: 400px;"></div>
+      <div style="background: url('./images/support/FAQ.jpg') center bottom no-repeat;height: 400px;"></div>
       <div class="container" style="padding-top: 30px" v-html="about.context"></div>
     </div>
     <Footer/>
@@ -49,5 +49,16 @@
     /*color: #888;*/
     /*background-color: #f2f2f2;*/
     overflow-x: hidden;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .support {
+      padding-top: 0;
+      padding-bottom: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      line-height: 24px;
+      overflow-x: hidden;
+    }
   }
 </style>

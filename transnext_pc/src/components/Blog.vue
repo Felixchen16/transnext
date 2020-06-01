@@ -2,29 +2,41 @@
   <div>
     <Header v-bind:support_color="support_color" v-bind:isShow="true"/>
     <div class="support">
-      <div style="background: url('./static/images/support/4.jpg') center bottom no-repeat;height: 400px;"></div>
+      <div style="background: url('/images/support/4.jpg') center bottom no-repeat;height: 400px;"></div>
       <div class="containers">
-        <ul class="hdlist" style="clear: both; padding-left: 0;">
-          <li v-bind:key="index" v-for="(item, index) in blog_list">
-            <div class="new_img wow fadeInLeft animated" data-wow-delay="0.6s"
-                 v-bind:style="act === index ? col : col2"
-                 v-on:mouseover="clickCategory(index)"
-                 v-on:mouseout="clickCategory(-1)" >
-              <router-link :to="'/blog/' + item.id + '.html'">
-                <img v-bind:src="item.img" width="200" height="152" alt="TransNext">
-              </router-link>
+<!--        <ul class="hdlist" style="clear: both; padding-left: 0;">-->
+<!--          <li v-bind:key="index" v-for="(item, index) in blog_list">-->
+<!--            <div class="new_img wow fadeInLeft animated" data-wow-delay="0.6s"-->
+<!--                 v-bind:style="act === index ? col : col2"-->
+<!--                 v-on:mouseover="clickCategory(index)"-->
+<!--                 v-on:mouseout="clickCategory(-1)">-->
+<!--              <router-link :to="'/blog/' + item.id + '.html'">-->
+<!--                <img v-bind:src="item.img" width="200" height="152" alt="TransNext">-->
+<!--              </router-link>-->
+<!--            </div>-->
+<!--            <div class="new_brief wow fadeInLeft animated" data-wow-delay="0.6s"-->
+<!--                 style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">-->
+<!--              <router-link :to="'/blog/' + item.id + '.html'">-->
+<!--                {{ item.title }}-->
+<!--              </router-link>-->
+<!--              <div>{{ item.remark }}-->
+<!--              </div>-->
+<!--              <span>{{ item.time }}</span>-->
+<!--            </div>-->
+<!--          </li>-->
+<!--        </ul>-->
+        <List item-layout="vertical">
+        <ListItem v-for="(item, index) in blog_list" :key="item.index" :to="'/blog/' + item.id + '.html'">
+          <div v-on:mouseover="clickCategory(index)" v-on:mouseout="clickCategory(-1)">
+            <router-link :to="'/blog/' + item.id + '.html'"><ListItemMeta :title="item.title" :description="item.remark" :class="act === index ? 'ceshi' : '' "/>
+            </router-link>
             </div>
-            <div class="new_brief wow fadeInLeft animated" data-wow-delay="0.6s"
-                 style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-              <router-link :to="'/blog/' + item.id + '.html'">
-                {{ item.title }}
-              </router-link>
-              <div>{{ item.remark }}
-              </div>
-              <span>{{ item.created_time | formatTime }}</span>
-            </div>
-          </li>
-        </ul>
+          <span class="time">{{ item.time }}</span>
+          <template slot="extra">
+                <img :src="item.img" width="200" height="152">
+            </template>
+        </ListItem>
+    </List>
       </div>
     </div>
     <Footer/>
@@ -43,16 +55,11 @@
         blog_list: [],
         act: -1,
         col: 'visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft; border-color: rgb(36, 148, 214);',
-        col2: 'visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft; border-color: rgb(239, 239, 239);'
+        col2: 'visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft; border-color: rgb(239, 239, 239);',
       }
     },
     created() {
       this.get_blog()
-    },
-    filters: {
-      formatTime: function (value) {
-        return value.split('T')[0]
-      }
     },
     methods: {
       get_blog: function () {
@@ -73,10 +80,13 @@
   }
 </script>
 
+<style>
+  .ceshi .ivu-list-item-meta-content .ivu-list-item-meta-title{margin-bottom:12px;color:#00A7E1;font-size:16px;line-height:24px}
+</style>
 <style scoped>
   .support {
     padding-top: 60px;
-    padding-bottom: 30px;
+    /*padding-bottom: 30px;*/
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 24px;
@@ -129,5 +139,40 @@
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 14px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .support {
+      padding-top: 0;
+      /*padding-bottom: 30px;*/
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      line-height: 24px;
+      overflow-x: hidden;
+    }
+
+    .containers {
+      width: 100%;
+      padding-top: 30px;
+      margin: 0 auto;
+    }
+
+    .hdlist li .new_brief {
+      float: right;
+      width: 100%;
+      height: auto;
+    }
+
+    .hdlist li {
+      clear: both;
+      height: auto;
+      margin-top: 20px;
+      border-bottom: 1px dashed #CCC;
+      list-style-type: none;
+    }
+
+    .time {
+      margin-left: 1rem;
+    }
   }
 </style>

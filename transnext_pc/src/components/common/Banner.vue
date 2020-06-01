@@ -7,7 +7,7 @@
     :radius-dot="setting.radiusDot"
     :trigger="setting.trigger"
     :arrow="setting.arrow"
-    :height=860>
+    height='auto'>
     <CarouselItem v-bind:key="key" v-for="(banner, key) in banner_list">
       <div class="demo-carousel">
         <a v-bind:href="banner.link"><img v-bind:src="banner.image_url" alt="TransNext image"></a>
@@ -54,5 +54,14 @@
     max-height: 100%;
     display: block;
     margin: auto;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .demo-carousel img {
+      max-width: 100%;
+      height: 230px;
+      display: block;
+      margin: auto;
+    }
   }
 </style>

@@ -95,6 +95,7 @@ class Blog(models.Model):
                             max_length=255,
                             verbose_name="图片地址", )
     remark = models.TextField(null=True, blank=True, verbose_name="备注")
+    time = models.CharField(max_length=50, null=True, blank=True, verbose_name="Blog时间")
     created_time = models.DateTimeField(auto_now_add=True, verbose_name="创建时间")
 
     # 表信息声明

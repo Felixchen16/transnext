@@ -125,7 +125,7 @@
             category: this.product_list[0].category,
             breadcrumb: this.product_list[0].breadcrumb
           };
-          if(this.product_total < this.pagesize) {
+          if (this.product_total < this.pagesize) {
             this.show_list = this.product_list
           } else {
             this.show_list = this.product_list.slice(0, this.pagesize)
@@ -135,15 +135,15 @@
         });
       },
 
-      clickCategory: function(index) { // 这里我们传入一个当前值
+      clickCategory: function (index) { // 这里我们传入一个当前值
         this.categoryIndex = index
       },
 
-      changeCategory: function(value) {
+      changeCategory: function (value) {
         return value.replace(/\s+/g, "-")
       },
 
-      changePage: function(index) {
+      changePage: function (index) {
         let _start = (index - 1) * this.pagesize;
         let _end = index * this.pagesize;
         this.show_list = this.product_list.slice(_start, _end)
@@ -350,5 +350,26 @@
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .products {
+      padding-top: 0;
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      line-height: 24px;
+      color: #888;
+      background-color: #f2f2f2;
+      overflow-x: hidden;
+    }
+
+    .product-item .product-inner {
+      background-color: #fff;
+      padding: 20px;
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 25px;
+      height: auto;
+    }
   }
 </style>

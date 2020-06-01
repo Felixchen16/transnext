@@ -17,103 +17,113 @@
     <!--// Banners Area -->
 
     <!-- Banners Center -->
-    <div style="padding: 1rem 0 0;">
-      <div class="wrap">
-        <div class="listTitle">
-          <div class="listName">
-            <span>WHAT'S NEW AT TRANSNEXT</span>
-          </div>
-        </div>
-        <div style="position: relative; height: 916px; display: table; width: 100%;">
-          <!-- 第一列大图广告图 -->
-          <div class="centerBanner" style="position: absolute; left: 0; top: 0;">
-            <a v-bind:href="center_one.link" target="_blank">
-              <img v-bind:src="center_one.image_url" alt="">
-            </a>
-          </div>
-          <!--// 第一列大图广告图 -->
-
-          <!-- 第一列小图广告图 -->
-          <div class="centerBanner" style="position: absolute; left: 0; top: 600px;">
-            <a v-bind:href="center_two.link" target="_blank">
-              <img v-bind:src="center_two.image_url" alt="">
-            </a>
-          </div>
-          <!--// 第一列小图广告图 -->
-
-          <!-- 第二列小图广告图 -->
-          <div class="centerBanner" style="position: absolute; left: 600px; top: 0;">
-            <a v-bind:href="center_three.link" target="_blank">
-              <img v-bind:src="center_three.image_url" alt="">
-            </a>
-          </div>
-          <!--// 第二列小图广告图 -->
-
-          <!-- 第二列大图广告图 -->
-          <div class="centerBanner" style="position: absolute; left: 600px; top: 316px;">
-            <a v-bind:href="center_four.link" target="_blank">
-              <img v-bind:src="center_four.image_url" alt="">
-            </a>
-          </div>
-          <!--// 第二列大图广告图 -->
+    <!--    <div style="padding: 1rem 0 0;">-->
+    <div class="wrap">
+      <div class="listTitle">
+        <div class="listName">
+          <span>WHAT'S NEW AT TRANSNEXT</span>
         </div>
       </div>
+      <div style="position: relative; height: 916px; display: table; width: 100%;">
+        <!-- 第一列大图广告图 -->
+        <div class="centerBanner centerBanner-1">
+          <a v-bind:href="center_one.link" target="_blank">
+            <img v-bind:src="center_one.image_url" alt="">
+          </a>
+        </div>
+        <!--// 第一列大图广告图 -->
+
+        <!-- 第一列小图广告图 -->
+        <div class="centerBanner centerBanner-2">
+          <a v-bind:href="center_two.link" target="_blank">
+            <img v-bind:src="center_two.image_url" alt="">
+          </a>
+        </div>
+        <!--// 第一列小图广告图 -->
+
+        <!-- 第二列小图广告图 -->
+        <div class="centerBanner centerBanner-3">
+          <a v-bind:href="center_three.link" target="_blank">
+            <img v-bind:src="center_three.image_url" alt="">
+          </a>
+        </div>
+        <!--// 第二列小图广告图 -->
+
+        <!-- 第二列大图广告图 -->
+        <div class="centerBanner centerBanner-4">
+          <a v-bind:href="center_four.link" target="_blank">
+            <img v-bind:src="center_four.image_url" alt="">
+          </a>
+        </div>
+        <!--// 第二列大图广告图 -->
+      </div>
     </div>
+    <!--    </div>-->
     <!--// Banners Center -->
 
     <!-- Banners Footer -->
-    <div>
-      <div class="wrap">
-        <div class="listTitle">
-          <div class="listName">
-            <span>SEE OUR OTHER INNOVATIONS</span>
-          </div>
-        </div>
-        <div>
-          <div class="slider "
-               style="box-sizing: border-box; display: block; height: inherit; position: relative; width: 100%;">
-            <div aria-live="polite" aria-atomic="true" tabindex="-1"
-                 style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">Slide
-              1 of 3
-            </div>
-            <div class="slider-frame"
-                 style="box-sizing: border-box; display: block; height: 100%; margin: 0; overflow: hidden; padding: 0; position: relative; touch-action: pan-y pinch-zoom; transform: translate3d(0px, 0px, 0px);">
-              <ul class="slider-list"
-                  style="transform: translate3d(0px, 0px, 0px); position: relative; display: block; margin: 0; padding: 0; height: 232px; width: 1200px; cursor: pointer; box-sizing: border-box; touch-action: pan-y pinch-zoom;">
-                <li class="slider-slide slide-visible"
-                    style="box-sizing: border-box; display: inline-block; height: auto; left: 0; list-style-type: none; margin: auto 0; position: absolute; top: 0; transform: scale(1); transition: transform 0.4s linear 0s; vertical-align: top; width: 400px;">
-                  <div class="main_footer">
-                    <a v-bind:href="footer_one.link" target="_blank">
-                      <img v-bind:src="footer_one.image_url" alt="">
-                    </a>
-                  </div>
-                </li>
-                <li class="slider-slide slide-visible"
-                    style="box-sizing: border-box; display: inline-block; height: auto; left: 400px; list-style-type: none; margin: auto 0; position: absolute; top: 0; transform: scale(1); transition: transform 0.4s linear 0s; vertical-align: top; width: 400px;">
-                  <div class="main_footer">
-                    <a v-bind:href="footer_two.link" target="_blank">
-                      <img v-bind:src="footer_two.image_url" alt="">
-                    </a>
-                  </div>
-                </li>
-                <li class="slider-slide slide-visible"
-                    style="box-sizing: border-box; display: inline-block; height: auto; left: 800px; list-style-type: none; margin: auto 0; position: absolute; top: 0; transform: scale(1); transition: transform 0.4s linear 0s; vertical-align: top; width: 400px;">
-                  <div class="main_footer">
-                    <a v-bind:href="footer_three.link" target="_blank">
-                      <img v-bind:src="footer_three.image_url" alt="">
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
+    <div class="wrap wrap-footer">
+      <div class="listTitle">
+        <div class="listName">
+          <span>SEE OUR OTHER INNOVATIONS</span>
         </div>
       </div>
+
+      <div class="banners-area bg-white" style="margin: 0 auto; width: 100%; max-width: 1200px;">
+      <div style="display: table;width: 100%;">
+        <!-- Single Banner -->
+        <div class="main_top" v-bind:key="key" v-for="(banner, key) in main_banner_footer">
+          <a v-bind:href="banner.link" target="_blank">
+            <img v-bind:src="banner.image_url" alt="bannner image">
+          </a>
+        </div>
+        <!--// Single Banner -->
+      </div>
+    </div>
+
+<!--      <div class="slider "-->
+<!--           style="box-sizing: border-box; display: block; height: inherit; position: relative; width: 100%;">-->
+<!--        <div aria-live="polite" aria-atomic="true" tabindex="-1"-->
+<!--             style="position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;">Slide-->
+<!--          1 of 3-->
+<!--        </div>-->
+<!--        <div class="slider-frame"-->
+<!--             style="box-sizing: border-box; display: block; height: 100%; margin: 0; overflow: hidden; padding: 0; position: relative; touch-action: pan-y pinch-zoom; transform: translate3d(0px, 0px, 0px);">-->
+<!--          <ul class="slider-list"-->
+<!--              style="transform: translate3d(0px, 0px, 0px); position: relative; display: block; margin: 0; padding: 0; height: 232px; width: 1200px; cursor: pointer; box-sizing: border-box; touch-action: pan-y pinch-zoom;">-->
+<!--            <li class="slider-slide slide-visible"-->
+<!--                style="box-sizing: border-box; display: inline-block; height: auto; left: 0; list-style-type: none; margin: auto 0; position: absolute; top: 0; transform: scale(1); transition: transform 0.4s linear 0s; vertical-align: top; width: 400px;">-->
+<!--              <div class="main_footer main_footer_1">-->
+<!--                <a v-bind:href="footer_one.link" target="_blank">-->
+<!--                  <img v-bind:src="footer_one.image_url" alt="">-->
+<!--                </a>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="slider-slide slide-visible"-->
+<!--                style="box-sizing: border-box; display: inline-block; height: auto; left: 400px; list-style-type: none; margin: auto 0; position: absolute; top: 0; transform: scale(1); transition: transform 0.4s linear 0s; vertical-align: top; width: 400px;">-->
+<!--              <div class="main_footer main_footer_2">-->
+<!--                <a v-bind:href="footer_two.link" target="_blank">-->
+<!--                  <img v-bind:src="footer_two.image_url" alt="">-->
+<!--                </a>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--            <li class="slider-slide slide-visible"-->
+<!--                style="box-sizing: border-box; display: inline-block; height: auto; left: 800px; list-style-type: none; margin: auto 0; position: absolute; top: 0; transform: scale(1); transition: transform 0.4s linear 0s; vertical-align: top; width: 400px;">-->
+<!--              <div class="main_footer main_footer_3">-->
+<!--                <a v-bind:href="footer_three.link" target="_blank">-->
+<!--                  <img v-bind:src="footer_three.image_url" alt="">-->
+<!--                </a>-->
+<!--              </div>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
     <!--// Banners Footer -->
 
   </main>
   <!--// Page Conttent -->
+
 </template>
 
 <script>
@@ -124,9 +134,6 @@
         main_banner_top: [],
         main_banner_footer: [],
         center_banner_list: [],
-        footer_one: {},
-        footer_two: {},
-        footer_three: {},
         center_one: {},
         center_two: {},
         center_three: {},
@@ -147,9 +154,6 @@
             this.main_banner_footer.push(v)
           }
         });
-        this.footer_one = this.main_banner_footer[0];
-        this.footer_two = this.main_banner_footer[1];
-        this.footer_three = this.main_banner_footer[2]
       },
       center_banner_list: function (items) {
         // 监听中间广告数据
@@ -268,12 +272,48 @@
     font-weight: bold
   }
 
-  .centerBanner {
+  .centerBanner-1 {
     float: left;
     width: 50%;
     padding: 1rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .centerBanner-2 {
+    float: left;
+    width: 50%;
+    padding: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 600px;
+  }
+
+  .centerBanner-3 {
+    float: left;
+    width: 50%;
+    padding: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 600px;
+    top: 0;
+  }
+
+  .centerBanner-4 {
+    float: left;
+    width: 50%;
+    padding: 1rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 600px;
+    top: 316px;
   }
 
   .centerBanner a {
@@ -311,7 +351,21 @@
     margin: auto;
   }
 
-  .main_footer {
+  .main_footer_1 {
+    display: inline-block;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .main_footer_2 {
+    display: inline-block;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .main_footer_3 {
     display: inline-block;
     padding: 10px;
     -webkit-box-sizing: border-box;
@@ -332,5 +386,68 @@
     -webkit-transform: translateY(-5px);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
+  }
+
+  @media only screen and (max-width: 767px) {
+    .main_top {
+      display: inline-block;
+      width: 100%;
+      padding: 0.5rem;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .centerBanner-1 {
+      float: left;
+      width: 100%;
+      padding: 0.5rem;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .centerBanner-2 {
+      float: left;
+      width: 100%;
+      padding: 0.5rem;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      top: 410px;
+    }
+
+    .centerBanner-3 {
+      float: left;
+      width: 100%;
+      padding: 0.5rem;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      top: 620px;
+    }
+
+    .centerBanner-4 {
+      float: left;
+      width: 100%;
+      padding: 0.5rem;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      top: 830px;
+    }
+
+    .wrap-footer {
+      padding-top: 300px;
+    }
+
+    .main_footer_1 {
+      display: inline-block;
+      padding: 0.5rem;
+      width: 94%;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
   }
 </style>

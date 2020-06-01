@@ -11,7 +11,8 @@ class Banner(BaseModel):
     image_url = models.ImageField(upload_to="banner",
                                   null=True, blank=True,
                                   max_length=255,
-                                  verbose_name="图片地址",)
+                                  verbose_name="图片地址",
+                                  help_text='建议图片分辨率：1920 * 890')
     remark = models.TextField(verbose_name="备注信息")
 
     # 表信息声明
@@ -80,7 +81,8 @@ class MainBanner(BaseModel):
     image_url = models.ImageField(upload_to="main_banner",
                                   null=True, blank=True,
                                   max_length=255,
-                                  verbose_name="横幅图片",)
+                                  verbose_name="横幅图片",
+                                  help_text='建议图片分辨率：376 * 212')
 
     # 表信息声明
     class Meta:
@@ -101,13 +103,18 @@ class CenterBanner(BaseModel):
         (3, "第二列小图"),
         (4, "第二列大图")
     )
+    HELP_TEXT = '''
+    大图分辨率：576 * 576
+    小图分辨率：576 * 288
+    '''
     title = models.CharField(max_length=500, verbose_name="广告标题")
     link = models.CharField(max_length=500, verbose_name="广告链接")
     position = models.IntegerField(choices=POSITION_OPTION, default=1, verbose_name="广告所属位置")
     image_url = models.ImageField(upload_to="center_banner",
                                   null=True, blank=True,
                                   max_length=255,
-                                  verbose_name="横幅图片",)
+                                  verbose_name="横幅图片",
+                                  help_text=HELP_TEXT)
 
     # 表信息声明
     class Meta:

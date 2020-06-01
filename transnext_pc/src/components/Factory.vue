@@ -2,7 +2,7 @@
   <div>
     <Header v-bind:about_color="about_color" v-bind:isShow="true"/>
     <div class="about">
-      <div style="background: url('./static/images/about/about.jpg') center bottom no-repeat;height: 400px;"></div>
+      <div style="background: url('./images/about/about.jpg') center bottom no-repeat;height: 400px;"></div>
       <div class="container" style="padding-top: 30px" v-html="profile.context"></div>
     </div>
     <Footer/>
@@ -49,5 +49,16 @@
     /*color: #888;*/
     /*background-color: #f2f2f2;*/
     overflow-x: hidden;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .about {
+      padding-top: 0;
+      padding-bottom: 30px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      line-height: 24px;
+      overflow-x: hidden;
+    }
   }
 </style>
